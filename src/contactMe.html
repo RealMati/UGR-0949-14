@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+    <link rel="stylesheet" href="./contactMe.css">
+  </head>
+  <body>
+    <header>
+        <img src="./images/logo.svg" alt="logo" >
+        <nav>
+            <ul class="navContainer">
+                <li><a href="home.html" target="_self">Home</a></li>
+                <li><a href="aboutMe.html" target="_self">About Me</a></li>
+                <li><a href="interests.html" target="_self">Interests</a></li>
+                <li><a href="contactMe.html" target="_self">Contact Me</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div id="contactList">
+            <div class="contactAddress">
+                <img src="./images/address.svg" alt="address">
+                <p>123 street</p>
+            </div>
+            <div class="contactAddress">
+                <img src="./images/phonenumber.svg" alt="phoneNumber">
+                <a href="tel:+251900000000">+251 900 000 000</a>
+            </div>
+            <div class="contactAddress">
+                <img src="./images/email.svg" alt="email">
+                <a href="mailto:matimilkessa@gmail.com">matimilkessa@gmail.com</a>
+            </div>
+            <div class="contactAddress">
+                <img src="./images/facebook.svg" alt="facebook">
+                <a href="https://www.facebook.com/username">facebook.com/username</a>
+            </div>
+            <div class="contactAddress">
+                <img src="./images/linkedin.svg" alt="linkedin">
+                <a href="https://www.linkedin.com/in/mati-milkessa/">linkedin.com/in/mati-milkessa</a>
+            </div>
+            <div class="contactAddress">
+                <img src="./images/telegram.svg" alt="telegram">
+                <a href="https://t.me/RealMati">t.me/RealMati</a>
+            </div>
+        </div>
+        <div id="contactMeForm">
+            <form action="/action_page.php">
+                <div class="contactBox">
+                    <label for="fname">First name:</label><br>
+                    <input type="text" id="fname" name="fname"><br>
+                </div>
+                <div class="contactBox">
+                    <label for="lname">Last name:</label><br>
+                    <input type="text" id="lname" name="lname"><br>
+                </div>
+                
+                <div class="contactBox">
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email" name="email"><br>
+                </div>
+                <div class="contactBox">
+                    <label for="message">Message:</label><br>
+                    <input type="text" id="message" name="message"><br>
+                </div>
+                <input id="submitButton" type="submit" value="Send Message" >
+              </form>
+            </div>
+    </main>
+    <footer>
+        <ul class="footerLinks">
+            <li><a href="http://www.telegram.org"><img src="./images/telegram.svg" alt="telegram"></a></li>
+            <li><a href="http://www.facebook.com"><img src="./images/facebook.svg" alt="facebook"></a></li>
+            <li><a href="http://www.linkedin.com"><img src="./images/linkedin.svg" alt="linkedin"></a></li>
+            <li><a href="http://www.twitter.com"><img src="./images/twitterx.svg" alt="twitter"></a></li>
+        </ul>
+        <p>© 2023 · All rights reserved</p>
+    </footer>
+  </body>
+</html>
