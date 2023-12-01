@@ -1,0 +1,98 @@
+header{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+main, footer{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+body{
+    background-image: url("../images/background.jpg");
+    background-size: contain;
+    background-position: center;
+}
+header{
+    background-image: url("../images/navbar.jpg");
+    background-position: center;
+    margin: 0px;
+}
+/*
+.navContainer{
+    display: flex;
+    flex-direction: row ;
+    gap: 20px;
+
+}
+the dropdown 
+*/
+
+ul{
+    list-style-type: none;
+}
+.footerLinks{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+}
+footer > p{
+    align-self: center;
+}
+.section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+.section video {
+    width: 100%;
+}
+  
+.media{
+    display: flex;
+    flex-flow:row wrap;
+    align-items: center;
+}
+.media > img{
+    width:46.5vw;
+}
+.media > video{
+    width:100%;
+}
+header img{
+    height: 60px;
+}
+header{
+    align-items: center;
+}
+label, a, p, h2, h1{
+    color: antiquewhite;
+}
+a{
+    text-decoration: none;
+}
+a:hover {
+color: red;
+text-decoration: underline;
+background-color: cornflowerblue;
+}
+
+a:focus {
+outline: 2px solid blue;
+}
+
+a:active {
+background-color: yellow;
+}
+
+a:visited {
+color: rgb(221, 245, 221);
+}
+.navContainer{
+    display: none;
+}
+.footerLinks img{
+    width: 50px;
+}

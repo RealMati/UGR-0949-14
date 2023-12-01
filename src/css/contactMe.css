@@ -1,0 +1,120 @@
+header, main, footer, .contactList{
+    display: flex;
+    flex-direction: column;
+}
+.navContainer{
+    display: flex;
+    flex-direction: row ;
+    gap: 20px;
+
+}
+body{
+    background-image: url("../images/background.jpg");
+    background-size: contain;
+    background-position: center;
+}
+header{
+    background-image: url("../images/navbar.jpg");
+    background-position: center;
+    margin: 0px;
+}
+ul{
+    list-style-type: none;
+}
+.footerLinks{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: center;
+}
+
+footer{
+    align-items: center;
+}
+#contactMeForm > form{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5px;
+    padding-bottom: 11px;
+    border-radius: 10px;
+    background: rgba(17, 20, 28, 0.58);
+    justify-content: start;
+}
+.contactAddress{
+    display: flex;
+    flex-direction: row;
+    gap:10px;
+    align-items: center;
+}
+#contactList{
+    display: flex;
+    flex-direction: column;
+    margin-left: 10%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.contactBox #email{
+    width: 55vw;
+}
+.contactBox #message{
+    width: 88vw;
+    height: 10vw;
+}
+
+.contactBox #fname{
+    width: 40vw;
+}
+.contactBox #lname{
+    width: 42vw;
+}
+.contactBox{
+    margin: 5px;
+}
+#submitButton{
+    height:30px;
+    padding: 10px;
+    border-radius: 11px;
+    background: linear-gradient(180deg, #F4F4F4 -115.38%, rgba(76, 73, 84, 0.66) 34.73%, rgba(66, 0, 255, 0.00) 211.54%);
+    line-height: 50%;
+    color: antiquewhite;
+    justify-self: end;
+    margin-left: auto;
+    margin-top: 5px;
+
+}
+
+header img{
+    height: 60px;
+}
+header{
+    align-items: center;
+}
+div > input{
+    background-color: rgba(232, 232, 232, 0.61);
+}
+label, a, p{
+    color: antiquewhite;
+}
+a{
+    text-decoration: none;
+}
+a:hover {
+color: red;
+text-decoration: underline;
+background-color: cornflowerblue;
+}
+
+a:focus {
+outline: 2px solid blue;
+}
+
+a:active {
+background-color: yellow;
+}
+
+a:visited {
+color: rgb(221, 245, 221);
+}
+.footerLinks img{
+    width: 50px;
+}

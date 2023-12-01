@@ -1,0 +1,105 @@
+header, main, footer{
+    display: flex;
+    padding: 0px 13px 9px 13px;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px; 
+}
+body{
+    background-image: url("../images/background.jpg");
+    background-size: cover;
+    background-position: center;
+}
+header{
+    background-image: url("../images/navbar.jpg");
+    background-position: center;
+    margin: 0px;
+}
+.navContainer{
+    display: flex;
+    flex-direction: row ;
+    gap: 20px;
+
+}
+ul{
+    list-style-type: none;
+}
+
+.footerLinks{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+}
+footer > p{
+    align-self: center;
+}
+div > a{
+    color: antiquewhite;
+    padding: 5px;
+    border-radius: 11px;
+    background: linear-gradient(180deg, #F4F4F4 -115.38%, rgba(76, 73, 84, 0.66) 34.73%, rgba(66, 0, 255, 0.00) 211.54%);
+
+}
+header img{
+    height: 60px;
+}
+header{
+    align-items: center;
+}
+.articleContent{
+    padding:8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+label, a, p{
+    color: antiquewhite;
+}
+.articleContent img{
+    width: 100%;
+}
+a{
+    text-decoration: none;
+}
+a:hover {
+color: red;
+text-decoration: underline;
+background-color: cornflowerblue;
+}
+
+a:focus {
+outline: 2px solid blue;
+}
+
+a:active {
+background-color: yellow;
+}
+
+a:visited {
+color: rgb(221, 245, 221);
+}
+
+a{
+    text-decoration: none;
+}
+a:hover {
+color: red;
+text-decoration: underline;
+background-color: cornflowerblue;
+}
+
+a:focus {
+outline: 2px solid blue;
+}
+
+a:active {
+background-color: yellow;
+}
+
+a:visited {
+color: rgb(221, 245, 221);
+}
+.footerLinks img{
+    width: 50px;
+}
