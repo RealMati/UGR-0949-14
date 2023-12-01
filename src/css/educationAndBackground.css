@@ -1,0 +1,76 @@
+header, main, footer{
+    display: grid;
+    justify-items: center;
+}
+header{
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 40vw;
+    background-image: url("../images/navbar.jpg");
+    background-position: center;
+    margin: 0px;
+}
+.footerLinks{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-column-gap: 7px;
+}
+/*
+.navContainer{
+
+}
+the dropdown 
+*/
+body{
+    background-image: url("../images/background.jpg");
+    background-size: contain;
+    background-position: center;
+}
+header{
+    background-image: url("../images/navbar.jpg");
+    background-position: center;
+    margin: 0px;
+}
+label, a, p,li, h1, h2,h3{
+    color: antiquewhite;
+}
+nav ul, .footerLinks{
+    list-style-type: none;
+}
+.footerLinks{
+}
+footer > p{
+}
+header{
+}
+header img{
+    height: 60px;
+}
+header{
+}
+a{
+    text-decoration: none;
+}
+a:hover {
+color: red;
+text-decoration: underline;
+background-color: cornflowerblue;
+}
+
+a:focus {
+outline: 2px solid blue;
+}
+
+a:active {
+background-color: yellow;
+}
+
+a:visited {
+color: rgb(221, 245, 221);
+}
+
+.navContainer{
+    display: none;
+}
+.footerLinks img{
+    width: 50px;
+}
