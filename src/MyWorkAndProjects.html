@@ -4,15 +4,15 @@
     <meta charset="UTF-8" >
     <meta name="viewport" content="width=device-width, initial-scale=1.0" >
     <title>My Work and Projects</title>
-    <link rel="stylesheet" href="css/MyWorkAndProjects.css">
+    <link rel="stylesheet" href="css/styles.css">
   </head>
-  <body>
-    <header>
-      <img src="./images/logo.svg" alt="logo" >
+  <body class="body--withsidebar">
+    <header class="header header--dropdown  header--sidebar">
+      <img src="./images/logo.svg" alt="logo" class="header__logo" >
       <nav>
         <div class="dropdown">
           <img src="./images/menu.svg" alt="menu">  
-          <ul class="navContainer">
+          <ul class="navLinks navLinks--dropdown">
               <li><a href="home.html" target="_self">Home</a></li>
               <li><a href="aboutMe.html" target="_self">About Me</a></li>
               <li><a href="interests.html" target="_self">Interests</a></li>
@@ -21,31 +21,31 @@
         </div>
       </nav>
     </header>
-    <main>
-      <div class="section">
-        <div class="media">
-          <video controls>
+    <main class="main--myWork">
+      <div class="mywork">
+        <div class="mywork__media">
+          <video controls class="mywork__media__video">
             <source  src="./images/project1.mp4" type="video/mp4">
             Your browser does not support the video tag.
           </video>
-          <img src="./images/project1Image1.png" alt="image1">
-          <img src="./images/project1Image2.png" alt="image2">
+          <img src="./images/project1Image1.png" alt="image1" class="mywork__media__img">
+          <img src="./images/project1Image2.png" alt="image2" class="mywork__media__img">
         </div>
-        <article>
+        <article class="mywork__article">
           <h2>Solar Panel Cleaning Automation</h2>
           <p>The project focuses on the development of an autonomous robotic system specifically designed for cleaning solar panels. By integrating advanced technologies such as robotics, artificial intelligence, and computer vision, the project aims to create a highly efficient and reliable cleaning solution that can operate in various environmental conditions.</p>
         </article>
       </div>
-      <div class="section">
-        <div class="media">
-          <video controls>
+      <div class="mywork">
+        <div class="mywork__media">
+          <video controls class="mywork__media__video">
             <source  src="./images/project2.mp4" type="video/mp4">
             Your browser does not support the video tag.
           </video>
-          <img src="./images/project2Image1.png" alt="image1">
-          <img src="./images/project2Image2.png" alt="image2">
+          <img src="./images/project2Image1.png" alt="image1" class="mywork__media__img">
+          <img src="./images/project2Image2.png" alt="image2" class="mywork__media__img">
         </div>
-        <article>
+        <article class="mywork__article">
           <h2>Non-Contact Food Delivery Robot</h2>
           <p>The non-contact food delivery robot project focuses on creating an autonomous robotic system specifically designed for delivering food orders while minimizing physical contact. By integrating advanced technologies such as robotics, computer vision, and obstacle avoidance, the project aims to provide a reliable and efficient solution for contactless food delivery.</p>
         </article>

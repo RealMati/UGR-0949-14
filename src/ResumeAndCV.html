@@ -4,16 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resume and CV</title>
-    <link rel="stylesheet" href="css/ResumeAndCV.css">
+    <link rel="stylesheet" href="css/styles.css">
 
   </head>
   <body>
-    <header>
-      <img src="./images/logo.svg" alt="logo" >
+    <header class="header header--dropdown">
+      <img src="./images/logo.svg" alt="logo" class="header__logo" >
       <nav>
         <div class="dropdown">
           <img src="./images/menu.svg" alt="menu">  
-          <ul class="navContainer">
+          <ul class="navLinks navLinks--dropdown navLinks--resume">
               <li><a href="home.html" target="_self">Home</a></li>
               <li><a href="aboutMe.html" target="_self">About Me</a></li>
               <li><a href="interests.html" target="_self">Interests</a></li>
@@ -22,16 +22,16 @@
         </div>
       </nav>
     </header>
-    <main>
+    <main class="main--resume">
       <div class="topContent">
-        <img src="./images/person.jpg" alt="person">
-        <article>
-          <h1>First Name</h1>
-          <h2>Last Name</h2>
-          <h3>Student at Addis Ababa University</h3>
+        <img src="./images/person.jpg" alt="person" class="topContent__img">
+        <article class="topContent__article">
+          <h1 class="largerFont">First Name</h1>
+          <h2 class="largeFont">Last Name</h2>
+          <h3 class="normalFont">Student at Addis Ababa University</h3>
         </article>
       </div>
-      <div class="section"> 
+      <div class="cv-section"> 
         <article class="personalNote">
           <h3>Personal Note</h3>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus quos eaque nam quod aspernatur iste iusto? Maiores aperiam molestias fugit quae aliquid error labore! Maxime sequi accusantium eum laudantium animi!</p>
@@ -76,7 +76,7 @@
           </ul>
         </article>
       </div>
-      <a id="download-link" href="./ResumeAndCV.html" download="Resume/CV.html" target="_blank">Download Resume/CV</a>
+      <a id="download-link" href="./ResumeAndCV.html" download="Resume/CV.html" target="_blank" class="button">Download Resume/CV</a>
     </main>
     <footer>
       <ul class="footerLinks">
