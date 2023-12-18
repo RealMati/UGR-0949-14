@@ -12,6 +12,7 @@ header{
     background-image: url("../images/navbar.jpg");
     background-position: center;
     margin: 0px;
+    background-repeat: no-repeat;
 }
 .footerLinks,.navLinks{
     display: grid;
@@ -28,6 +29,7 @@ body{
     background-image: url("../images/background.jpg");
     background-size: contain;
     background-position: center;
+    
 }
 
 
@@ -207,7 +209,7 @@ div > input{
 }
 #contactMeForm form{
     padding-bottom: 0px;
-    height: 30vh;
+    height: min(45vh,320px);
     padding-left: 10px;
     /* align-self: self-end; */
     justify-self: start;
@@ -882,7 +884,7 @@ body{
         margin-left: 10vw;
     }
     #contactMeForm form{
-        height: 40vh;
+        height: min(70vh,320px);
     }
     .mywork__media{
         grid-area: 1/2/2/3;
@@ -943,4 +945,47 @@ body{
     }
 
 }
-    
+
+
+.active-burger{
+    display: block;
+}
+
+.errormsg{
+    display:none;
+    color: white;
+    background-color:red;
+    border-radius: 2px;
+    width: fit-content;
+}
+
+
+
+.confirmButton{
+    border-radius: 30px;
+    background-color:darkgreen;
+    padding: 10px 70px;
+    border:0;
+    font-size: 20px;
+    font-weight:bolder;
+}
+
+.modal{
+    background: #00b894;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 8px;
+    padding: 10px 30px 30px;
+    text-align: center;
+    display: none;
+}
+.modal h2, .modal p{
+    color: #2e2d2d;
+}
+
+.modal img{
+    width: 90px;
+}
+

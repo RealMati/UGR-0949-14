@@ -46,26 +46,37 @@
             </div>
         </div>
         <div id="contactMeForm">
-            <form action="/action_page.php">
+            <form class="form">
                 <div class="contactBox contactBox__fname">
                     <label for="fname">First name:</label><br>
-                    <input type="text" id="fname" name="fname"><br>
+                    <input class="inputContact" type="text" id="fname" name="fname"><br>
+                    <div id="fname-Err" class="errormsg">First Name can not be empty</div>
                 </div>
                 <div class="contactBox contactBox__lname">
                     <label for="lname">Last name:</label><br>
-                    <input type="text" id="lname" name="lname"><br>
+                    <input  class="inputContact" type="text" id="lname" name="lname"><br>
+                    <div id="lname-Err" class="errormsg">Last Name can not be empty</div>
                 </div>
                 
                 <div class="contactBox contactBox__email">
                     <label for="email">Email:</label><br>
-                    <input type="email" id="email" name="email"><br>
+                    <input  class="inputContact" type="text" id="email" name="email"><br>
+                    <div id="email-Err" class="errormsg">The input Email is not valid</div>
                 </div>
                 <div class="contactBox contactBox__message">
                     <label for="message">Message:</label><br>
-                    <input type="text" id="message" name="message"><br>
+                    <input  class="inputContact" type="text" id="message" name="message"><br>
+                    <div id="message-Err" class="errormsg">Message field can not be empty</div>
                 </div>
                 <input id="submitButton" type="submit" value="Send Message" class="contactMeForm__submit" >
               </form>
+        </div>
+
+        <div class="modal" id="modal">
+            <img src="images/confirmation.svg">
+            <h2>Thank You</h2>
+            <p>You have successfully sent your message. Thanks!</p>
+            <p><strong>This pop-up will close automatically after 3 seconds</strong></p>
         </div>
     </main>
     <footer>
@@ -77,5 +88,8 @@
         </ul>
         <p>© 2023 · All rights reserved</p>
     </footer>
+    <script src="js/formsubmit.js"></script>
+    <!-- <script src="js/modal.js"></script> -->
+    
   </body>
 </html>
