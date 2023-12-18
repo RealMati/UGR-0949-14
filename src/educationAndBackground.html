@@ -3,34 +3,52 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Education and Background</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <title>ation and Background</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma-rtl.min.css">
   </head>
-  <body class="body--withsidebar">
-    <header class="header header--dropdown  header--sidebar">
-        <img src="./images/logo.svg" alt="logo" class="header__logo">
-        <nav>
-          <div class="dropdown">
-            <img src="./images/menu.svg" alt="menu">  
-            <ul class="navLinks navLinks--dropdown">
-                <li><a href="home.html" target="_self">Home</a></li>
-                <li><a href="aboutMe.html" target="_self">About Me</a></li>
-                <li><a href="interests.html" target="_self">Interests</a></li>
-                <li><a href="contactMe.html" target="_self">Contact Me</a></li>
+  <body class="columns is-desktop is-multiline">
+    <header class="column is-3-desktop menu">
+      <nav class="">
+        <div class="is-hidden-touch">
+          <a href="home.html" class=""><img src="./images/logo.svg" alt="logo" class="image is-48x48 is-one-fifth" ></a>
+
+          <ul class="menu-list ">
+              <li class="navbar-item"><a href="home.html" target="_self">Home</a></li>
+              <li class="navbar-item"><a href="aboutMe.html" target="_self">About Me</a></li>
+              <li class="navbar-item"><a href="interests.html" target="_self">Interests</a></li>
+              <li class="navbar-item"><a href="contactMe.html" target="_self">Contact Me</a></li>
+          </ul>
+        </div>
+        <div class="columns is-hidden-desktop">
+          <div class="mt-4 ml-4 navbar-brand ">
+            <a href="home.html" class=""><img src="./images/logo.svg" alt="logo" class="image is-48x48 is-one-fifth" ></a>
+            <a class="navbar-burger is-hidden-tablet">
+                <span></span>
+                <span></span>
+                <span></span>
+            </a>
+          </div>
+          <div class="column mt-4 ml-6 pl-6">
+            <ul class="columns is-hidden-desktop is-hidden-mobile">
+              <li class="column"><a href="home.html" target="_self">Home</a></li>
+              <li class="column"><a href="aboutMe.html" target="_self">About Me</a></li>
+              <li class="column"><a href="interests.html" target="_self">Interests</a></li>
+              <li class="column"><a href="contactMe.html" target="_self">Contact Me</a></li>
             </ul>
           </div>
-        </nav>
-    </header>
-    <main class="main--educ">
-        <div class="educ-section">
-            <article class="educ-section__content">
-              <h2>Background</h2>
+        </div>
+      </nav>
+  </header>
+    <main class="column is-9">
+        <div class="box section">
+            <article class="">
+              <h2 class="title">Background</h2>
               <p>Lorem ipsum dolor sit   amet consectetur adipisicing elit. Suscipit minima ea in architecto harum velit quisquam cumque tempora non molestias sapiente repellat temporibus enim obcaecati veritatis et magnam, iusto dolorem laborum eveniet. Cupiditate doloremque officia quas accusantium asperiores, dolorum similique? Corrupti aut impedit corporis, doloremque provident tempore quisquam accusamus nesciunt?</p>
             </article>
           </div>
-          <div class="educ-section">
-            <article class="educ-section__content">
-              <h2>Education</h2>
+          <div class="box section">
+            <article class="">
+              <h2 class="title">Education</h2>
               <ul>
                 <li><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur illum perspiciatis saepe. Praesentium, tempora quaerat!</p></li>
                 <li><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur illum perspiciatis saepe. Praesentium, tempora quaerat!</p></li>
@@ -39,14 +57,15 @@
             </article>
           </div>
     </main>
-    <footer>
-      <ul class="footerLinks">
-          <li><a href="http://www.telegram.org"><img src="./images/telegram.svg" alt="telegram"></a></li>
-          <li><a href="http://www.facebook.com"><img src="./images/facebook.svg" alt="facebook"></a></li>
-          <li><a href="http://www.linkedin.com"><img src="./images/linkedin.svg" alt="linkedin"></a></li>
-          <li><a href="http://www.twitter.com"><img src="./images/twitterx.svg" alt="twitter"></a></li>
+    <footer class="has-text-centered column is-3">
+      <ul class="columns  is-mobile is-variable is-1 is-centered">
+          <li class="column is-2"><a href="http://www.telegram.org"><img src="./images/telegram.svg" alt="telegram"></a></li>
+          <li class="column is-2"><a href="http://www.facebook.com"><img src="./images/facebook.svg" alt="facebook"></a></li>
+          <li class="column is-2"><a href="http://www.linkedin.com"><img src="./images/linkedin.svg" alt="linkedin"></a></li>
+          <li class="column is-2"><a href="http://www.twitter.com"><img src="./images/twitterx.svg" alt="twitter"></a></li>
       </ul>
       <p>© 2023 · All rights reserved</p>
   </footer>
+  <script src="index.js"></script>
   </body>
 </html>

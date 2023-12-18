@@ -4,78 +4,127 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Me</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma-rtl.min.css">
   </head>
   <body>
-    <header class="header">
-        <img src="./images/logo.svg" alt="logo" class="header__logo" >
-        <nav>
-            <ul class="navLinks">
-                <li><a href="home.html" target="_self">Home</a></li>
-                <li><a href="aboutMe.html" target="_self">About Me</a></li>
-                <li><a href="interests.html" target="_self">Interests</a></li>
-                <li><a href="contactMe.html" target="_self">Contact Me</a></li>
+    <header class="">
+        
+        <div class="columns is-hidden-desktop is-hidden-mobile">
+          <div class="mt-4 ml-4 navbar-brand ">
+            <a href="home.html" class=""><img src="./images/logo.svg" alt="logo" class="image is-48x48 is-one-fifth" ></a>
+            
+          </div>
+          <div class="column mt-4 ml-6 pl-6">
+            <ul class="columns is-hidden-mobile">
+              <li class="column"><a href="home.html" target="_self">Home</a></li>
+              <li class="column"><a href="aboutMe.html" target="_self">About Me</a></li>
+              <li class="column"><a href="interests.html" target="_self">Interests</a></li>
+              <li class="column"><a href="contactMe.html" target="_self">Contact Me</a></li>
             </ul>
-        </nav>
+          </div>
+        </div>
+  
+        <div class="navbar is-hidden-tablet-only is-hidden-mobile">
+            <div class=" navbar-brand ">
+              <a href="home.html" class="navbar-item"><img src="./images/logo.svg" alt="logo" class="image is-48x48 is-one-fifth" ></a>
+              <a class="navbar-burger">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+              </a>
+            </div>
+            <nav class="navbar-menu">
+              <ul class="navbar-end">
+                  <li class="navbar-item"><a href="home.html" target="_self">Home</a></li>
+                  <li class="navbar-item"><a href="aboutMe.html" target="_self">About Me</a></li>
+                  <li class="navbar-item"><a href="interests.html" target="_self">Interests</a></li>
+                  <li class="navbar-item"><a href="contactMe.html" target="_self">Contact Me</a></li>
+              </ul>
+            </nav>
+          </div>
+          
+          <div class="container">
+              <div class="columns is-mobile is-centered is-multiline is-hidden-desktop is-hidden-tablet">
+                <div class="column is-2 mt-4 ml-4 has-text-centered">
+                  <a href="home.html" class=""><img src="./images/logo.svg" alt="logo" class="image is-48x48" ></a>
+              
+                </div>
+                <div class="column is-full mt-4 ml-6 pl-6">
+                  <ul class="columns is-mobile">
+                    <li class="column"><a href="home.html" target="_self">Home</a></li>
+                    <li class="column"><a href="aboutMe.html" target="_self">About Me</a></li>
+                    <li class="column"><a href="interests.html" target="_self">Interests</a></li>
+                    <li class="column"><a href="contactMe.html" target="_self">Contact Me</a></li>
+                  </ul>
+                </div>
+              </div>
+          </div>
+
+          
     </header>
-    <main class="main--contactMe">
-        <div id="contactList">
-            <div class="contactList contactList__address">
-                <img src="./images/address.svg" alt="address">
-                <p>123 street</p>
-            </div>
-            <div class="contactList contactList__address">
-                <img src="./images/phonenumber.svg" alt="phoneNumber">
-                <a href="tel:+251900000000">+251 900 000 000</a>
-            </div>
-            <div class="contactList contactList__address">
-                <img src="./images/email.svg" alt="email">
-                <a href="mailto:matimilkessa@gmail.com">matimilkessa@gmail.com</a>
-            </div>
-            <div class="contactList contactList__address">
-                <img src="./images/facebook.svg" alt="facebook">
-                <a href="https://www.facebook.com/username">facebook.com/username</a>
-            </div>
-            <div class="contactList contactList__address">
-                <img src="./images/linkedin.svg" alt="linkedin">
-                <a href="https://www.linkedin.com/in/mati-milkessa/">linkedin.com/in/mati-milkessa</a>
-            </div>
-            <div class="contactList contactList__address">
-                <img src="./images/telegram.svg" alt="telegram">
-                <a href="https://t.me/RealMati">t.me/RealMati</a>
+    <main class="columns m-5  mb-0">
+        <div class="column ml-6">
+            <div class="is-align-center-center">
+                <div class="">
+                    <img src="./images/address.svg" alt="address">
+                    <p>123 street</p>
+                </div>
+                <div class="">
+                    <img src="./images/phonenumber.svg" alt="phoneNumber">
+                    <a href="tel:+251900000000">+251 900 000 000</a>
+                </div>
+                <div class="">
+                    <img src="./images/email.svg" alt="email">
+                    <a href="mailto:matimilkessa@gmail.com">matimilkessa@gmail.com</a>
+                </div>
+                <div class="">
+                    <img src="./images/facebook.svg" alt="facebook">
+                    <a href="https://www.facebook.com/username">facebook.com/username</a>
+                </div>
+                <div class="">
+                    <img src="./images/linkedin.svg" alt="linkedin">
+                    <a href="https://www.linkedin.com/in/mati-milkessa/">linkedin.com/in/mati-milkessa</a>
+                </div>
+                <div class="">
+                    <img src="./images/telegram.svg" alt="telegram">
+                    <a href="https://t.me/RealMati">t.me/RealMati</a>
+                </div>
             </div>
         </div>
-        <div id="contactMeForm">
+        <div class="column box has-background-grey-light">
             <form action="/action_page.php">
-                <div class="contactBox contactBox__fname">
-                    <label for="fname">First name:</label><br>
-                    <input type="text" id="fname" name="fname"><br>
-                </div>
-                <div class="contactBox contactBox__lname">
-                    <label for="lname">Last name:</label><br>
-                    <input type="text" id="lname" name="lname"><br>
+                <div class="field is-horizontal">
+                    <div class="mr-6">
+                        <label for="fname" class="label">First name:</label><br>
+                        <input class="control is-expanded" type="text" id="fname" name="fname"><br>
+                    </div>
+                    <div class="">
+                        <label for="lname" class="label">Last name:</label><br>
+                        <input class="control is-expanded" type="text" id="lname" name="lname"><br>
+                    </div>
                 </div>
                 
-                <div class="contactBox contactBox__email">
-                    <label for="email">Email:</label><br>
-                    <input type="email" id="email" name="email"><br>
+                <div class="field">
+                    <label for="email" class="label">Email:</label><br>
+                    <input class="control is-expanded" type="email" id="email" name="email"><br>
                 </div>
-                <div class="contactBox contactBox__message">
-                    <label for="message">Message:</label><br>
-                    <input type="text" id="message" name="message"><br>
+                <div class="field">
+                    <label for="message" class="label">Message:</label><br>
+                    <textarea class="textarea has-fixed-size" id="" cols="2" rows="4"></textarea>
                 </div>
-                <input id="submitButton" type="submit" value="Send Message" class="contactMeForm__submit" >
+                <input id="submitButton" type="submit" value="Send Message" class="button is-rounded is-info" >
               </form>
         </div>
     </main>
-    <footer>
-        <ul class="footerLinks">
-            <li><a href="http://www.telegram.org"><img src="./images/telegram.svg" alt="telegram"></a></li>
-            <li><a href="http://www.facebook.com"><img src="./images/facebook.svg" alt="facebook"></a></li>
-            <li><a href="http://www.linkedin.com"><img src="./images/linkedin.svg" alt="linkedin"></a></li>
-            <li><a href="http://www.twitter.com"><img src="./images/twitterx.svg" alt="twitter"></a></li>
+    <footer class="has-text-centered">
+        <ul class="columns  is-mobile is-variable is-1 is-centered">
+            <li class="column is-1"><a href="http://www.telegram.org"><img src="./images/telegram.svg" alt="telegram"></a></li>
+            <li class="column is-1"><a href="http://www.facebook.com"><img src="./images/facebook.svg" alt="facebook"></a></li>
+            <li class="column is-1"><a href="http://www.linkedin.com"><img src="./images/linkedin.svg" alt="linkedin"></a></li>
+            <li class="column is-1"><a href="http://www.twitter.com"><img src="./images/twitterx.svg" alt="twitter"></a></li>
         </ul>
         <p>© 2023 · All rights reserved</p>
     </footer>
-  </body>
+    <script src="index.js"></script>
+    </body>
 </html>

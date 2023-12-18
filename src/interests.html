@@ -4,37 +4,72 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Interests</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma-rtl.min.css">
   </head>
-  <body class="body--withsidebar">
-    <header class="header header--sidebar">
-      <img src="./images/logo.svg" alt="logo" class="header__logo" >
-      <nav>
-        <ul class="navLinks">
-          <li><a href="home.html" target="_self">Home</a></li>
-          <li><a href="aboutMe.html" target="_self">About Me</a></li>
-          <li><a href="interests.html" target="_self">Interests</a></li>
-          <li><a href="contactMe.html" target="_self">Contact Me</a></li>
-      </ul>
-      </nav>
-    </header>
-    <main class="main--interests">
-      <div class="contetLayout">
-        <img src="./images/image.svg" alt="image1" class="contetLayout__img">
-        <article class="contetLayout__article">
-          <h2>Favorite Movies</h2>
-          <ul>
+  <body class="columns is-desktop is-multiline">
+    <header class="column is-3-desktop menu">
+      <div class="is-hidden-tablet-only is-hidden-mobile">
+        <a href="home.html" class="menu-list mb-6">
+          <img src="./images/logo.svg" alt="logo" class="image is-48x48 is-one-fifth" >
+        </a>
+        <nav class="menu-list ">
+          <ul class="menu-list">
+              <li class=""><a href="home.html" target="_self">Home</a></li>
+              <li class=""><a href="aboutMe.html" target="_self">About Me</a></li>
+              <li class=""><a href="interests.html" target="_self">Interests</a></li>
+              <li class=""><a href="contactMe.html" target="_self">Contact Me</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="columns is-hidden-desktop is-hidden-mobile">
+        <div class="mt-4 ml-4 navbar-brand ">
+          <a href="home.html" class=""><img src="./images/logo.svg" alt="logo" class="image is-48x48 is-one-fifth" ></a>
+          
+        </div>
+        <div class="column mt-4 ml-6 pl-6">
+          <ul class="columns is-hidden-mobile">
+            <li class="column"><a href="home.html" target="_self">Home</a></li>
+            <li class="column"><a href="aboutMe.html" target="_self">About Me</a></li>
+            <li class="column"><a href="interests.html" target="_self">Interests</a></li>
+            <li class="column"><a href="contactMe.html" target="_self">Contact Me</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="container">
+        <div class="columns is-mobile is-centered is-multiline is-hidden-desktop is-hidden-tablet">
+          <div class="column is-2 mt-4 ml-4 has-text-centered">
+            <a href="home.html" class=""><img src="./images/logo.svg" alt="logo" class="image is-48x48" ></a>
+        
+          </div>
+          <div class="column is-full pl-6">
+            <ul class="columns is-mobile">
+              <li class="column"><a href="home.html" target="_self">Home</a></li>
+              <li class="column"><a href="aboutMe.html" target="_self">About Me</a></li>
+              <li class="column"><a href="interests.html" target="_self">Interests</a></li>
+              <li class="column"><a href="contactMe.html" target="_self">Contact Me</a></li>
+            </ul>
+          </div>
+        </div>
+    </div>
+  </header>
+    <main class="column is-9-desktop">
+      <div class="columns is-mobile is-flex-direction-row-reverse is-vcentered box mb-5">
+        <article class="column">
+          <h2 class="title is-5 ">Favorite Movies</h2>
+          <ul class="">
             <li>The Shawshank Redemption</li>
             <li>Inception</li>
             <li>The Godfather</li>
             <li>The Dark Knight</li>
           </ul>
         </article>
+        <img src="./images/image.svg" alt="image1" class="column image is-128x128">
+
       </div>
-      <div class="contetLayout">
-        <img src="./images/image.svg" alt="image2" class="contetLayout__img">
-        <article class="contetLayout__article">
-          <h2>Favorite Books</h2>
+      
+      <div class="columns is-mobile is-flex-direction-row-reverse is-vcentered box mb-5">
+        <article class="column">
+          <h2 class="title is-5 column ">Favorite Books</h2>
           <ul>
             <li>"To Kill a Mockingbird" by Harper Lee</li>
             <li>"1984" by George Orwell.</li>
@@ -42,11 +77,13 @@
             <li>"The Lord of the Rings" by J.R.R. Tolkien</li>
           </ul>
         </article>
+
+        <img src="./images/image.svg" alt="image2" class="column  image is-128x128">
+
       </div>
-      <div class="contetLayout">
-        <img src="./images/image.svg" alt="image3" class="contetLayout__img">
-        <article class="contetLayout__article">
-          <h2>Leisure Time Activities</h2>
+      <div class="columns is-mobile is-flex-direction-row-reverse is-vcentered box">
+        <article class="column">
+          <h2 class="title is-5">Leisure Time Activities</h2>
           <ul>
             <li>Reading and exploring new books and genres.</li>
             <li>Watching movies and binge-watching TV series.</li>
@@ -54,16 +91,19 @@
             <li>Trying out new recipes and cooking or baking.</li>
           </ul>
         </article>
+        <img src="./images/image.svg" alt="image3" class="column  image is-128x128">
+
       </div>
     </main>
-    <footer>
-      <ul class="footerLinks">
-          <li><a href="http://www.telegram.org"><img src="./images/telegram.svg" alt="telegram"></a></li>
-          <li><a href="http://www.facebook.com"><img src="./images/facebook.svg" alt="facebook"></a></li>
-          <li><a href="http://www.linkedin.com"><img src="./images/linkedin.svg" alt="linkedin"></a></li>
-          <li><a href="http://www.twitter.com"><img src="./images/twitterx.svg" alt="twitter"></a></li>
+    <footer class="has-text-centered column is-3-desktop">
+      <ul class="columns  is-mobile is-variable is-1 is-centered">
+          <li class="column is-2"><a href="http://www.telegram.org"><img src="./images/telegram.svg" alt="telegram"></a></li>
+          <li class="column is-2"><a href="http://www.facebook.com"><img src="./images/facebook.svg" alt="facebook"></a></li>
+          <li class="column is-2"><a href="http://www.linkedin.com"><img src="./images/linkedin.svg" alt="linkedin"></a></li>
+          <li class="column is-2"><a href="http://www.twitter.com"><img src="./images/twitterx.svg" alt="twitter"></a></li>
       </ul>
       <p>© 2023 · All rights reserved</p>
   </footer>
+  <script src="index.js"></script>
   </body>
 </html>

@@ -4,88 +4,118 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resume and CV</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma-rtl.min.css">
 
   </head>
   <body>
-    <header class="header header--dropdown">
-      <img src="./images/logo.svg" alt="logo" class="header__logo" >
-      <nav>
-        <div class="dropdown">
-          <img src="./images/menu.svg" alt="menu">  
-          <ul class="navLinks navLinks--dropdown navLinks--resume">
-              <li><a href="home.html" target="_self">Home</a></li>
-              <li><a href="aboutMe.html" target="_self">About Me</a></li>
-              <li><a href="interests.html" target="_self">Interests</a></li>
-              <li><a href="contactMe.html" target="_self">Contact Me</a></li>
-          </ul>
+    <header class="menu">
+        
+        <div class="columns is-tablet is is-hidden-desktop is-hidden-mobile">
+          <div class="mt-4 ml-4 navbar-brand ">
+            <a href="home.html" class=""><img src="./images/logo.svg" alt="logo" class="image is-48x48 is-one-fifth" ></a>
+            
+          </div>
+          <div class="column mt-4 ml-6 pl-6">
+            <ul class="columns is-hidden-mobile">
+              <li class="column"><a href="home.html" target="_self">Home</a></li>
+              <li class="column"><a href="aboutMe.html" target="_self">About Me</a></li>
+              <li class="column"><a href="interests.html" target="_self">Interests</a></li>
+              <li class="column"><a href="contactMe.html" target="_self">Contact Me</a></li>
+            </ul>
+          </div>
         </div>
-      </nav>
+  
+
+      <div class="navbar is-hidden-tablet-only">
+        <div class=" navbar-brand ">
+          <a href="home.html" class=""><img src="./images/logo.svg" alt="logo" class="image is-48x48 is-one-fifth" ></a>
+          <a class="navbar-burger">
+              <span></span>
+              <span></span>
+              <span></span>
+          </a>
+        </div>
+        <nav class="navbar-menu">
+          <ul class="navbar-end">
+              <li class="navbar-item"><a href="home.html" target="_self">Home</a></li>
+              <li class="navbar-item"><a href="aboutMe.html" target="_self">About Me</a></li>
+              <li class="navbar-item"><a href="interests.html" target="_self">Interests</a></li>
+              <li class="navbar-item"><a href="contactMe.html" target="_self">Contact Me</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
-    <main class="main--resume">
-      <div class="topContent">
-        <img src="./images/person.jpg" alt="person" class="topContent__img">
-        <article class="topContent__article">
-          <h1 class="largerFont">First Name</h1>
-          <h2 class="largeFont">Last Name</h2>
-          <h3 class="normalFont">Student at Addis Ababa University</h3>
-        </article>
+    <main class="">
+      <div class="columns is-flex-direction-row-reverse">
+        <div class="column">
+          <div class="columns is-vcentered box">
+            <article class="column">
+              <h1 class="is-size-3">First Name</h1>
+              <h2 class="is-size-4">Last Name</h2>
+              <h3 class="is-size-5">Student at Addis Ababa University</h3>
+            </article>
+            <img src="./images/person.jpg" alt="person" class="column ">
+          </div>
+          <div class="columns is-flex-direction-row-reverse is-vcentered">
+            <div class="column box">
+              <article class="">
+                <h3 class="subtitle">Personal Note</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus quos eaque nam quod aspernatur iste iusto? Maiores aperiam molestias fugit quae aliquid error labore! Maxime sequi accusantium eum laudantium animi!</p>
+              </article>
+            </div>
+            <div class="column">
+              <article  class="box"> 
+                <h3 class="subtitle">personal details</h3>
+                <ul>
+                  <li>Lorem ipsum dolor sit amet.</li>
+                  <li>Lorem ipsum dolor sit amet.</li>
+                  <li>Lorem ipsum dolor sit amet.</li>
+                  <li>Lorem ipsum dolor sit amet.</li>
+                </ul>
+              </article>
+              <article  class="box">
+                <h3 class="subtitle">Experiece</h3>
+                <ul>
+                  <li>Lorem ipsum, dolor sit amet consectetur adipisicing.</li>
+                  <li>Lorem ipsum, dolor sit amet consectetur adipisicing.</li>
+                  <li>Lorem ipsum, dolor sit amet consectetur adipisicing.</li>
+                </ul>
+              </article>
+            </div>
+          </div>
+        </div>
+        <div class="column is-3 has-text-centered mt-6">
+          <article class="box">
+            <h3 class="subtitle">Skills</h3>
+            <ul>
+              <li>Lorem ipsum dolor sit amet.</li>
+              <li>Lorem ipsum dolor sit amet.</li>
+              <li>Lorem ipsum dolor sit amet.</li>
+              <li>Lorem ipsum dolor sit amet.</li>
+            </ul>
+          </article>
+          <article class="box">
+            <h3 class="subtitle">Contact Me</h3>
+            <ul>
+              <li>Lorem ipsum dolor sit.</li>
+              <li>Lorem ipsum dolor sit.</li>
+              <li>Lorem ipsum dolor sit.</li>
+              <li>Lorem ipsum dolor sit.</li>
+            </ul>
+          </article>
+        </div>
       </div>
-      <div class="cv-section"> 
-        <article class="personalNote">
-          <h3>Personal Note</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus quos eaque nam quod aspernatur iste iusto? Maiores aperiam molestias fugit quae aliquid error labore! Maxime sequi accusantium eum laudantium animi!</p>
-        </article>
-      </div>
-      <div class="mainListContents">
-        <article>
-          <h3>personal details</h3>
-          <ul>
-            <li>Lorem ipsum dolor sit amet.</li>
-            <li>Lorem ipsum dolor sit amet.</li>
-            <li>Lorem ipsum dolor sit amet.</li>
-            <li>Lorem ipsum dolor sit amet.</li>
-          </ul>
-        </article>
-        <article>
-          <h3>Experiece</h3>
-          <ul>
-            <li>Lorem ipsum, dolor sit amet consectetur adipisicing.</li>
-            <li>Lorem ipsum, dolor sit amet consectetur adipisicing.</li>
-            <li>Lorem ipsum, dolor sit amet consectetur adipisicing.</li>
-          </ul>
-        </article>
-      </div>
-      <div class="sidebarContent">
-        <article>
-          <h3>Skills</h3>
-          <ul>
-            <li>Lorem ipsum dolor sit amet.</li>
-            <li>Lorem ipsum dolor sit amet.</li>
-            <li>Lorem ipsum dolor sit amet.</li>
-            <li>Lorem ipsum dolor sit amet.</li>
-          </ul>
-        </article>
-        <article>
-          <h3>Contact Me</h3>
-          <ul>
-            <li>Lorem ipsum dolor sit.</li>
-            <li>Lorem ipsum dolor sit.</li>
-            <li>Lorem ipsum dolor sit.</li>
-            <li>Lorem ipsum dolor sit.</li>
-          </ul>
-        </article>
-      </div>
-      <a id="download-link" href="./ResumeAndCV.html" download="Resume/CV.html" target="_blank" class="button">Download Resume/CV</a>
+      <div class="has-text-centered"><a id="download-link" href="./ResumeAndCV.html" download="Resume/CV.html" target="_blank" class="button is-rounded is-info">Download Resume/CV</a></div>
     </main>
-    <footer>
-      <ul class="footerLinks">
-          <li><a href="http://www.telegram.org"><img src="./images/telegram.svg" alt="telegram"></a></li>
-          <li><a href="http://www.facebook.com"><img src="./images/facebook.svg" alt="facebook"></a></li>
-          <li><a href="http://www.linkedin.com"><img src="./images/linkedin.svg" alt="linkedin"></a></li>
-          <li><a href="http://www.twitter.com"><img src="./images/twitterx.svg" alt="twitter"></a></li>
+    <footer class="has-text-centered mt-4">
+      <ul class="columns is-variable is-1 is-centered">
+          <li class="column is-1"><a href="http://www.telegram.org"><img src="./images/telegram.svg" alt="telegram"></a></li>
+          <li class="column is-1"><a href="http://www.facebook.com"><img src="./images/facebook.svg" alt="facebook"></a></li>
+          <li class="column is-1"><a href="http://www.linkedin.com"><img src="./images/linkedin.svg" alt="linkedin"></a></li>
+          <li class="column is-1"><a href="http://www.twitter.com"><img src="./images/twitterx.svg" alt="twitter"></a></li>
       </ul>
       <p>© 2023 · All rights reserved</p>
   </footer>
+  <script src="index.js"></script>
   </body>
 </html>

@@ -4,36 +4,76 @@
     <meta charset="UTF-8" >
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma-rtl.min.css">
   </head>
   <body>
-    <header class="header">
-      <img src="./images/logo.svg" alt="logo" class="header__logo" >
-      <nav>
-        <ul class="navLinks">
-            <li><a href="home.html" target="_self">Home</a></li>
-            <li><a href="aboutMe.html" target="_self">About Me</a></li>
-            <li><a href="interests.html" target="_self">Interests</a></li>
-            <li><a href="contactMe.html" target="_self">Contact Me</a></li>
-        </ul>
-      </nav>
-    </header>
-    <main class="main--home">
-        <div class="home-articleContent">
-            <img src="./images/person.jpg" alt="person photo" class="home__profilePic">
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui, quidem iusto cum quos tempore exercitationem saepe! Asperiores labore reiciendis, omnis ipsa eveniet doloribus corporis repudiandae assumenda mollitia? Corporis esse voluptatum in sunt totam et eveniet quaerat dolorum vitae numquam accusamus hic, impedit, laboriosam, doloribus doloremque sequi iusto veniam. Fugiat, harum.</p>
-            <a href="aboutMe.html" class="button botton--home">More About Me</a>
+    <header class="  has-shadow">
+       
+      <div class="columns is-hidden-desktop is-hidden-mobile">
+        <div class="mt-4 ml-4 navbar-brand ">
+          <a href="home.html" class=""><img src="./images/logo.svg" alt="logo" class="image is-48x48 is-one-fifth" ></a>
+          
+        </div>
+        <div class="column mt-4 ml-6 pl-6">
+          <ul class="columns is-hidden-mobile">
+            <li class="column"><a href="home.html" target="_self">Home</a></li>
+            <li class="column"><a href="aboutMe.html" target="_self">About Me</a></li>
+            <li class="column"><a href="interests.html" target="_self">Interests</a></li>
+            <li class="column"><a href="contactMe.html" target="_self">Contact Me</a></li>
+          </ul>
+        </div>
+      </div>
+
+        <div class="navbar is-hidden-tablet-only is-hidden-mobile">
+          <div class="navbar-brand">
+            <a href="home.html" class=""><img src="./images/logo.svg" alt="logo" class="image is-48x48 is-one-fifth" ></a>
+          </div>
+          <nav class="navbar-menu">
+            <ul class="navbar-end">
+                <li class="navbar-item"><a href="home.html" target="_self">Home</a></li>
+                <li class="navbar-item"><a href="aboutMe.html" target="_self">About Me</a></li>
+                <li class="navbar-item"><a href="interests.html" target="_self">Interests</a></li>
+                <li class="navbar-item"><a href="contactMe.html" target="_self">Contact Me</a></li>
+            </ul>
+          </nav>
+        </div>
+        
+        <div class="container is-hidden-tablet is-hidden-desktop">
+            <div class="columns is-mobile is-centered is-multiline is-hidden-desktop is-hidden-tablet">
+              <div class="column is-2 mt-4 ml-4 has-text-centered">
+                <a href="home.html" class=""><img src="./images/logo.svg" alt="logo" class="image is-48x48" ></a>
+            
+              </div>
+              <div class="column is-full pl-6">
+                <ul class="columns is-mobile">
+                  <li class="column"><a href="home.html" target="_self">Home</a></li>
+                  <li class="column"><a href="aboutMe.html" target="_self">About Me</a></li>
+                  <li class="column"><a href="interests.html" target="_self">Interests</a></li>
+                  <li class="column"><a href="contactMe.html" target="_self">Contact Me</a></li>
+                </ul>
+              </div>
+            </div>
+        </div>
+  </header>
+    <main class="container box">
+        <div class="columns is-vcentered is-flex-direction-row-reverse">
+          <img src="./images/person.jpg" alt="person photo" class="column">
+            <div class="">
+              <p class="is-size-5 has-text-centered block">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui, quidem iusto cum quos tempore exercitationem saepe! Asperiores labore reiciendis, omnis ipsa eveniet doloribus corporis repudiandae assumenda mollitia? Corporis esse voluptatum in sunt totam et eveniet quaerat dolorum vitae numquam accusamus hic, impedit, laboriosam, doloribus doloremque sequi iusto veniam. Fugiat, harum.</p>
+              <div class="has-text-centered block"><a href="aboutMe.html" class="button is-rounded is-info">More About Me</a></div>
+            </div>
         </div>
     
     </main>
-    <footer>
-      <ul class="footerLinks">
-          <li><a href="http://www.telegram.org"><img src="./images/telegram.svg" alt="telegram"></a></li>
-          <li><a href="http://www.facebook.com"><img src="./images/facebook.svg" alt="facebook"></a></li>
-          <li><a href="http://www.linkedin.com"><img src="./images/linkedin.svg" alt="linkedin"></a></li>
-          <li><a href="http://www.twitter.com"><img src="./images/twitterx.svg" alt="twitter"></a></li>
+    <footer class="has-text-centered">
+      <ul class="columns  is-mobile is-variable is-1 is-centered">
+          <li class="column is-1"><a href="http://www.telegram.org"><img src="./images/telegram.svg" alt="telegram"></a></li>
+          <li class="column is-1"><a href="http://www.facebook.com"><img src="./images/facebook.svg" alt="facebook"></a></li>
+          <li class="column is-1"><a href="http://www.linkedin.com"><img src="./images/linkedin.svg" alt="linkedin"></a></li>
+          <li class="column is-1"><a href="http://www.twitter.com"><img src="./images/twitterx.svg" alt="twitter"></a></li>
       </ul>
       <p>© 2023 · All rights reserved</p>
   </footer>
+  <script src="index.js"></script>
   </body>
 </html>
