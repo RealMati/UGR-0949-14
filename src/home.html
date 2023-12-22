@@ -4,36 +4,50 @@
     <meta charset="UTF-8" >
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
-    <link rel="stylesheet" href="./home.css">
+    <link rel="stylesheet" href="../dist/output.css">
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
   </head>
-  <body>
-    <header>
-      <img src="./images/logo.svg" alt="logo" >
-      <nav>
-        <ul class="navContainer">
-            <li><a href="home.html" target="_self">Home</a></li>
-            <li><a href="aboutMe.html" target="_self">About Me</a></li>
-            <li><a href="interests.html" target="_self">Interests</a></li>
-            <li><a href="contactMe.html" target="_self">Contact Me</a></li>
-        </ul>
-      </nav>
-    </header>
-    <main>
-        <div class="articleContent">
-            <img src="./images/person.jpg" alt="person photo">
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui, quidem iusto cum quos tempore exercitationem saepe! Asperiores labore reiciendis, omnis ipsa eveniet doloribus corporis repudiandae assumenda mollitia? Corporis esse voluptatum in sunt totam et eveniet quaerat dolorum vitae numquam accusamus hic, impedit, laboriosam, doloribus doloremque sequi iusto veniam. Fugiat, harum.</p>
-            <a href="aboutMe.html">More About Me</a>
-        </div>
+  <body class=" bg-slate-200">
+    <header class="m-8 mt-2 shadow-lg">
+         
+      <div class="">
+          
+          <div class="">
+              <div class=" flex flex-col items-center sm:flex-row sm:justify-between">
+                <div class=" ">
+                  <a href="home.html" class=""><img src="./images/logo.svg" alt="logo" class="" ></a>
+              
+                </div>
+                <div class="">
+                  <ul class="flex space-x-10 sm:space-x-5">
+                    <li class="hover:bg-slate-300 sm:w-auto text-end"><a href="home.html" class="" target="_self">Home</a></li>
+                      <li class="hover:bg-slate-300 sm:w-auto  text-end"><a href="aboutMe.html" target="_self">About Me</a></li>
+                      <li class="hover:bg-slate-300 sm:w-auto text-end"><a href="interests.html" target="_self">Interests</a></li>
+                      <li class="hover:bg-slate-300  sm:w-auto text-end"><a href="contactMe.html" target="_self">Contact Me</a></li>
+                    </ul>
+                </div>
+              </div>
+          </div>
+  </header>
+    <main class="flex flex-col justify-center m-4 sm:flex-row-reverse">
+
+          <img src="./images/person.jpg" alt="person photo" class="scale-75 sm:w-1/2 ">
+          <div class="flex flex-col justify-center  sm:w-1/2 space-y-4 sm:ml-6">
+            <p class="">Lorem, ipsum dolor sit amet consectetur adiping elit. Qui, quidem iusto cum quos tempore exercitationem saepe! Asperiores labore reiciendomnpsa eveniet doloribus corporepudiandae assumenda mollitia? Corporsse voluptatum in sunt totam et eveniet quaerat dolorum vitae numquam accusamus hic, impedit, laboriosam, doloribus doloremque sequi iusto veniam. Fugiat, harum.</p>
+            <div class="self-center sm:self-start bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded cursor-pointer"><a href="aboutMe.html" class="">More About Me</a></div>
+          </div>
+
     
     </main>
-    <footer>
-      <ul class="footerLinks">
-          <li><a href="http://www.telegram.org"><img src="./images/telegram.svg" alt="telegram"></a></li>
-          <li><a href="http://www.facebook.com"><img src="./images/facebook.svg" alt="facebook"></a></li>
-          <li><a href="http://www.linkedin.com"><img src="./images/linkedin.svg" alt="linkedin"></a></li>
-          <li><a href="http://www.twitter.com"><img src="./images/twitterx.svg" alt="twitter"></a></li>
+    <footer class="flex flex-col items-center">
+      <ul class="flex justify-center space-x-6">
+          <li class=""><a href="http://www.telegram.org"><img src="./images/telegram.svg" alt="telegram"></a></li>
+          <li class=""><a href="http://www.facebook.com"><img src="./images/facebook.svg" alt="facebook"></a></li>
+          <li class=""><a href="http://www.linkedin.com"><img src="./images/linkedin.svg" alt="linkedin"></a></li>
+          <li class=""><a href="http://www.twitter.com"><img src="./images/twitterx.svg" alt="twitter"></a></li>
       </ul>
       <p>© 2023 · All rights reserved</p>
   </footer>
+  <script src="index.js"></script>
   </body>
 </html>

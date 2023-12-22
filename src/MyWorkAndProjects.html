@@ -4,61 +4,75 @@
     <meta charset="UTF-8" >
     <meta name="viewport" content="width=device-width, initial-scale=1.0" >
     <title>My Work and Projects</title>
-    <link rel="stylesheet" href="./MyWorkAndProjects.css">
+    <link rel="stylesheet" href="../dist/output.css">
   </head>
-  <body>
-    <header>
-      <img src="./images/logo.svg" alt="logo" >
-      <nav>
-        <div class="dropdown">
-          <img src="./images/menu.svg" alt="menu">  
-          <ul class="navContainer">
-              <li><a href="home.html" target="_self">Home</a></li>
-              <li><a href="aboutMe.html" target="_self">About Me</a></li>
-              <li><a href="interests.html" target="_self">Interests</a></li>
-              <li><a href="contactMe.html" target="_self">Contact Me</a></li>
+  <body class=" bg-slate-200 ">
+    <header class="m-8 mt-2 shadow-lg pb-1">
+         
+          
+          
+        
+      <div class=" flex flex-wrap justify-between">
+        <div class=" ">
+          <a href="home.html" class=""><img src="./images/logo.svg" alt="logo" class="" ></a>
+      
+        </div>
+        <div class=""><img src="images/menu.svg" alt="menu"  class="md:hidden scale-75" id="menu"></div>
+        <div class="hidden w-full md:w-auto sm:self-center md:block" id="menu-list">
+          <ul class="flex flex-col w-full items-end md:flex-row space-x-10 md:space-x-4">
+            <li class="hover:bg-slate-300 w-full  md:w-auto text-end"><a href="home.html" class="" target="_self">Home</a></li>
+            <li class="hover:bg-slate-300 w-full  md:w-auto text-end"><a href="aboutMe.html" target="_self">About Me</a></li>
+            <li class="hover:bg-slate-300 w-full  md:w-auto text-end"><a href="interests.html" target="_self">Interests</a></li>
+            <li class="hover:bg-slate-300 w-full  md:w-auto text-end"><a href="contactMe.html" target="_self">Contact Me</a></li>
           </ul>
         </div>
-      </nav>
-    </header>
-    <main>
-      <div class="section">
-        <div class="media">
-          <video controls>
-            <source  src="./images/project1.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-          </video>
-          <img src="./images/project1Image1.png" alt="image1">
-          <img src="./images/project1Image2.png" alt="image2">
+    
+  </header>
+    <main class="flex flex-col gap-10 ">
+
+
+      <div class=" m-10 sm:flex sm:flex-row-reverse sm:m-2">
+        <div class="">
+          <div class="flex flex-wrap space-y-4 ">
+            <video controls class="w-full">
+              <source  src="./images/project1.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+            <img src="./images/project1Image1.png" alt="image1" class="w-1/2  ">
+            <img src="./images/project1Image2.png" alt="image2" class=" w-1/2 ">
+          </div>
         </div>
-        <article>
-          <h2>Solar Panel Cleaning Automation</h2>
-          <p>The project focuses on the development of an autonomous robotic system specifically designed for cleaning solar panels. By integrating advanced technologies such as robotics, artificial intelligence, and computer vision, the project aims to create a highly efficient and reliable cleaning solution that can operate in various environmental conditions.</p>
+        <article class="">
+          <h2 class="text-2xl font-semibold">Solar Panel Cleaning Automation</h2>
+          <p class="">The project focuses on the development of an autonomous robotic system specifically designed for cleaning solar panels. By integrating advanced technologies such as robotics, artificial intelligence, and computer vision, the project aims to create a highly efficient and reliable cleaning solution that can operate in various environmental conditions.</p>
         </article>
       </div>
-      <div class="section">
-        <div class="media">
-          <video controls>
-            <source  src="./images/project2.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-          </video>
-          <img src="./images/project2Image1.png" alt="image1">
-          <img src="./images/project2Image2.png" alt="image2">
+      <div class="  m-10 sm:flex sm:flex-row-reverse sm:m-2">
+        <div class="">
+          <div class="flex flex-wrap space-y-4">
+            <video controls class="w-full ">
+              <source  src="./images/project2.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+            <img src="./images/project2Image1.png" alt="image1" class="w-1/2 ">
+            <img src="./images/project2Image2.png" alt="image2" class=" w-1/2">
+          </div>
         </div>
-        <article>
-          <h2>Non-Contact Food Delivery Robot</h2>
-          <p>The non-contact food delivery robot project focuses on creating an autonomous robotic system specifically designed for delivering food orders while minimizing physical contact. By integrating advanced technologies such as robotics, computer vision, and obstacle avoidance, the project aims to provide a reliable and efficient solution for contactless food delivery.</p>
+        <article class="">
+          <h2 class="text-2xl font-semibold">Non-Contact Food Delivery Robot</h2>
+          <p class="">The non-contact food delivery robot project focuses on creating an autonomous robotic system specifically designed for delivering food orders while minimizing physical contact. By integrating advanced technologies such as robotics, computer vision, and obstacle avoidance, the project aims to provide a reliable and efficient solution for contactless food delivery.</p>
         </article>
       </div>
     </main>
-    <footer>
-      <ul class="footerLinks">
-          <li><a href="http://www.telegram.org"><img src="./images/telegram.svg" alt="telegram"></a></li>
-          <li><a href="http://www.facebook.com"><img src="./images/facebook.svg" alt="facebook"></a></li>
-          <li><a href="http://www.linkedin.com"><img src="./images/linkedin.svg" alt="linkedin"></a></li>
-          <li><a href="http://www.twitter.com"><img src="./images/twitterx.svg" alt="twitter"></a></li>
+    <footer class="flex flex-col items-center">
+      <ul class="flex justify-center space-x-6">
+          <li class=""><a href="http://www.telegram.org"><img src="./images/telegram.svg" alt="telegram"></a></li>
+          <li class=""><a href="http://www.facebook.com"><img src="./images/facebook.svg" alt="facebook"></a></li>
+          <li class=""><a href="http://www.linkedin.com"><img src="./images/linkedin.svg" alt="linkedin"></a></li>
+          <li class=""><a href="http://www.twitter.com"><img src="./images/twitterx.svg" alt="twitter"></a></li>
       </ul>
       <p>© 2023 · All rights reserved</p>
   </footer>
+  <script src="index.js"></script>
   </body>
 </html>

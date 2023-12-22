@@ -4,37 +4,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Interests</title>
-    <link rel="stylesheet" href="./interests.css">
+    <link rel="stylesheet" href="../dist/output.css">
   </head>
-  <body>
-    <header>
-      <img src="./images/logo.svg" alt="logo" >
-      <nav class="navContainer">
-        <ul class="navContainer">
-          <li><a href="home.html" target="_self">Home</a></li>
-          <li><a href="aboutMe.html" target="_self">About Me</a></li>
-          <li><a href="interests.html" target="_self">Interests</a></li>
-          <li><a href="contactMe.html" target="_self">Contact Me</a></li>
-      </ul>
-      </nav>
-    </header>
-    <main>
-      <div class="contetLayout">
-        <img src="./images/image.svg" alt="image1">
-        <article class="articleContent">
-          <h2>Favorite Movies</h2>
-          <ul>
+  <body class="lg:flex lg:flex-row lg:flex-wrap  bg-slate-200">
+    <header class="m-8 mt-2 shadow-lg  lg:w-3/12 lg:m-0 lg:shadow-none ">
+      
+          
+
+      <div class=" flex flex-col items-center sm:flex-row sm:justify-between lg:flex-col lg:items-center lg:space-y-7">
+        <div class=" ">
+          <a href="home.html" class=""><img src="./images/logo.svg" alt="logo" class="" ></a>
+      
+        </div>
+ 
+          <ul class="flex space-x-10 sm:space-x-5 lg:flex-col lg:items-center lg:space-y-6">
+            <li class="hover:bg-slate-300 sm:w-auto text-end"><a href="home.html" class="" target="_self">Home</a></li>
+            <li class="hover:bg-slate-300 sm:w-auto  text-end"><a href="aboutMe.html" target="_self">About Me</a></li>
+            <li class="hover:bg-slate-300 sm:w-auto text-end"><a href="interests.html" target="_self">Interests</a></li>
+            <li class="hover:bg-slate-300  sm:w-auto text-end"><a href="contactMe.html" target="_self">Contact Me</a></li>
+          </ul>
+ 
+      </div>
+  </header>
+    <main class="flex flex-col gap-10 m-6 lg:m-10">
+      <div class="flex justify-between sm:flex-row-reverse sm:justify-end">
+        <article class="sm:ml-28">
+          <h2 class=" text-2xl font-semibold">Favorite Movies</h2>
+          <ul class="">
             <li>The Shawshank Redemption</li>
             <li>Inception</li>
             <li>The Godfather</li>
             <li>The Dark Knight</li>
           </ul>
         </article>
+        <img src="./images/image.svg" alt="image1" class=" ">
+
       </div>
-      <div class="contetLayout">
-        <img src="./images/image.svg" alt="image2">
-        <article class="articleContent">
-          <h2>Favorite Books</h2>
+      
+      <div class="flex justify-between sm:flex-row-reverse sm:justify-end">
+        <article class="sm:ml-28">
+          <h2 class=" text-2xl font-semibold ">Favorite Books</h2>
           <ul>
             <li>"To Kill a Mockingbird" by Harper Lee</li>
             <li>"1984" by George Orwell.</li>
@@ -42,11 +51,13 @@
             <li>"The Lord of the Rings" by J.R.R. Tolkien</li>
           </ul>
         </article>
+
+        <img src="./images/image.svg" alt="image2" class="  ">
+
       </div>
-      <div class="contetLayout">
-        <img src="./images/image.svg" alt="image3">
-        <article class="articleContent">
-          <h2>Leisure Time Activities</h2>
+      <div class="flex justify-between sm:flex-row-reverse sm:justify-end">
+        <article class="sm:ml-28">
+          <h2 class="text-2xl font-semibold">Leisure Time Activities</h2>
           <ul>
             <li>Reading and exploring new books and genres.</li>
             <li>Watching movies and binge-watching TV series.</li>
@@ -54,16 +65,19 @@
             <li>Trying out new recipes and cooking or baking.</li>
           </ul>
         </article>
+        <img src="./images/image.svg" alt="image3" class="  ">
+
       </div>
     </main>
-    <footer>
-      <ul class="footerLinks">
-          <li><a href="http://www.telegram.org"><img src="./images/telegram.svg" alt="telegram"></a></li>
-          <li><a href="http://www.facebook.com"><img src="./images/facebook.svg" alt="facebook"></a></li>
-          <li><a href="http://www.linkedin.com"><img src="./images/linkedin.svg" alt="linkedin"></a></li>
-          <li><a href="http://www.twitter.com"><img src="./images/twitterx.svg" alt="twitter"></a></li>
+    <footer class="flex flex-col items-center  lg:w-3/12 ">
+      <ul class="flex justify-center space-x-6">
+          <li class=""><a href="http://www.telegram.org"><img src="./images/telegram.svg" alt="telegram"></a></li>
+          <li class=""><a href="http://www.facebook.com"><img src="./images/facebook.svg" alt="facebook"></a></li>
+          <li class=""><a href="http://www.linkedin.com"><img src="./images/linkedin.svg" alt="linkedin"></a></li>
+          <li class=""><a href="http://www.twitter.com"><img src="./images/twitterx.svg" alt="twitter"></a></li>
       </ul>
       <p>© 2023 · All rights reserved</p>
   </footer>
+  <script src="index.js"></script>
   </body>
 </html>

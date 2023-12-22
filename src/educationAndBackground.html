@@ -3,50 +3,60 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Education and Background</title>
-    <link rel="stylesheet" href="./educationAndBackground.css">
+    <title>ation and Background</title>
+    <link rel="stylesheet" href="../dist/output.css">
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
   </head>
-  <body>
-    <header>
-        <img src="./images/logo.svg" alt="logo" >
-        <nav>
-          <div class="dropdown">
-            <img src="./images/menu.svg" alt="menu">  
-            <ul class="navContainer">
-                <li><a href="home.html" target="_self">Home</a></li>
-                <li><a href="aboutMe.html" target="_self">About Me</a></li>
-                <li><a href="interests.html" target="_self">Interests</a></li>
-                <li><a href="contactMe.html" target="_self">Contact Me</a></li>
-            </ul>
-          </div>
-        </nav>
+  <body class="lg:flex lg:flex-row lg:flex-wrap  bg-slate-200">
+    <header class="m-8 mt-2 shadow-lg lg:w-3/12 lg:m-0 lg:shadow-none ">
+         
+
+          
+
+              <div class=" flex flex-wrap items-center justify-between lg:flex-col lg:items-center lg:space-y-3">
+                <div class=" ">
+                  <a href="home.html" class=""><img src="./images/logo.svg" alt="logo" class="" ></a>
+              
+                </div>
+                <div class=""><img src="images/menu.svg" alt="menu"  class="sm:hidden scale-75" id="menu"></div>
+                <div class="hidden w-full sm:w-auto sm:self-center sm:block" id="menu-list">
+                  <ul class="flex flex-col w-full items-end sm:flex-row space-x-10 lg:flex-col lg:items-center lg:space-y-6 sm:space-x-4 lg:mb-32">
+                    <li class="hover:bg-slate-300 w-full  sm:w-auto text-end"><a href="home.html" class="" target="_self">Home</a></li>
+                    <li class="hover:bg-slate-300 w-full  sm:w-auto text-end"><a href="aboutMe.html" target="_self">About Me</a></li>
+                    <li class="hover:bg-slate-300 w-full  sm:w-auto text-end"><a href="interests.html" target="_self">Interests</a></li>
+                    <li class="hover:bg-slate-300 w-full  sm:w-auto text-end"><a href="contactMe.html" target="_self">Contact Me</a></li>
+                  </ul>
+                </div>
+              </div>
+
     </header>
-    <main>
-        <div class="section">
-            <article class="articleContent">
-              <h2>Background</h2>
+    <main class="flex flex-col space-y-10 lg:w-9/12 lg:pl-10 p-4">
+        <div class=" ">
+            <article class="">
+              <h2 class="text-2xl font-semibold">Background</h2>
               <p>Lorem ipsum dolor sit   amet consectetur adipisicing elit. Suscipit minima ea in architecto harum velit quisquam cumque tempora non molestias sapiente repellat temporibus enim obcaecati veritatis et magnam, iusto dolorem laborum eveniet. Cupiditate doloremque officia quas accusantium asperiores, dolorum similique? Corrupti aut impedit corporis, doloremque provident tempore quisquam accusamus nesciunt?</p>
             </article>
           </div>
-          <div class="section">
-          <article class="articleContent">
-            <h2>Education</h2>
-            <ul>
-              <li><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur illum perspiciatis saepe. Praesentium, tempora quaerat!</p></li>
-              <li><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur illum perspiciatis saepe. Praesentium, tempora quaerat!</p></li>
-              <li><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur illum perspiciatis saepe. Praesentium, tempora quaerat!</p></li>
-            </ul>
-          </article>
-        </div>
+          <div class=" ">
+            <article class="">
+              <h2 class="text-2xl font-semibold">Education</h2>
+              <ul>
+                <li><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur illum perspiciatis saepe. Praesentium, tempora quaerat!</p></li>
+                <li><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur illum perspiciatis saepe. Praesentium, tempora quaerat!</p></li>
+                <li><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur illum perspiciatis saepe. Praesentium, tempora quaerat!</p></li>
+              </ul>
+            </article>
+          </div>
     </main>
-    <footer>
-      <ul class="footerLinks">
-          <li><a href="http://www.telegram.org"><img src="./images/telegram.svg" alt="telegram"></a></li>
-          <li><a href="http://www.facebook.com"><img src="./images/facebook.svg" alt="facebook"></a></li>
-          <li><a href="http://www.linkedin.com"><img src="./images/linkedin.svg" alt="linkedin"></a></li>
-          <li><a href="http://www.twitter.com"><img src="./images/twitterx.svg" alt="twitter"></a></li>
+    <footer class="flex flex-col items-center lg:w-3/12">
+      <ul class="flex justify-center space-x-6">
+          <li class=""><a href="http://www.telegram.org"><img src="./images/telegram.svg" alt="telegram"></a></li>
+          <li class=""><a href="http://www.facebook.com"><img src="./images/facebook.svg" alt="facebook"></a></li>
+          <li class=""><a href="http://www.linkedin.com"><img src="./images/linkedin.svg" alt="linkedin"></a></li>
+          <li class=""><a href="http://www.twitter.com"><img src="./images/twitterx.svg" alt="twitter"></a></li>
       </ul>
       <p>© 2023 · All rights reserved</p>
   </footer>
+  <script src="index.js"></script>
   </body>
 </html>

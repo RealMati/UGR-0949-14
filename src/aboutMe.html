@@ -4,56 +4,83 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Me</title>
-    <link rel="stylesheet" href="./aboutMe.css">
-  </head>
-  <body>
-    <header>
-        <img src="./images/logo.svg" alt="logo" >
-        <nav>
-            <ul class="navContainer">
-                <li><a href="home.html" target="_self">Home</a></li>
-                <li><a href="aboutMe.html" target="_self">About Me</a></li>
-                <li><a href="interests.html" target="_self">Interests</a></li>
-                <li><a href="contactMe.html" target="_self">Contact Me</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <h1>About Me</h1>
-        <article class="articleContent">
-            <img src="./images/educationAndBackground.jpeg" alt="educationAndBackground">
-            <div class="textContent">
-                <h3>Education and Background</h3>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro facilis temporibus provident odio necessitatibus? Vitae, cum reprehenderit. Voluptatibus asperiores eos ducimus unde tempore necessitatibus cumque, nesciunt enim reiciendis quis soluta.</p>
-                <a href="educationAndBackground.html">go to Education and Background</a>
-            </div>
-        </article>
-        <article class="articleContent">
-            <img src="./images/MyWorkAndProjects.jpeg" alt="MyWorkAndProjects">
-            <div class="textContent">
-                <h3>My Work and Projects</h3>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro facilis temporibus provident odio necessitatibus? Vitae, cum reprehenderit. Voluptatibus asperiores eos ducimus unde tempore necessitatibus cumque, nesciunt enim reiciendis quis soluta.</p>
-                <a href="MyWorkAndProjects.html">go to My Work and Projects</a>
-            </div>
+    <link rel="stylesheet" href="../dist/output.css">
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+  <body class=" bg-slate-200">
+    <header class="m-8 mt-2 shadow-lg">
+         
+        <div class="">
             
-        </article>
-        <article class="articleContent">
-            <img src="./images/ResumeAndCV.jpeg" alt="ResumeAndCV">
-            <div class="textContent">
-                <h3>Resume/CV</h3>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro facilis temporibus provident odio necessitatibus? Vitae, cum reprehenderit. Voluptatibus asperiores eos ducimus unde tempore necessitatibus cumque, nesciunt enim reiciendis quis soluta.</p>
-                <a href="ResumeAndCV.html">go to Resume/CV</a>
+            <div class="">
+                <div class=" flex flex-col items-center sm:flex-row sm:justify-between">
+                  <div class=" ">
+                    <a href="home.html" class=""><img src="./images/logo.svg" alt="logo" class="" ></a>
+                
+                  </div>
+                  <div class="">
+                    <ul class="flex space-x-10 sm:space-x-5">
+                      <li class="hover:bg-slate-300 sm:w-auto text-end"><a href="home.html" class="" target="_self">Home</a></li>
+                      <li class="hover:bg-slate-300 sm:w-auto  text-end"><a href="aboutMe.html" target="_self">About Me</a></li>
+                      <li class="hover:bg-slate-300 sm:w-auto text-end"><a href="interests.html" target="_self">Interests</a></li>
+                      <li class="hover:bg-slate-300  sm:w-auto text-end"><a href="contactMe.html" target="_self">Contact Me</a></li>
+                    </ul>
+                  </div>
+                </div>
             </div>
-        </article>
+    </header>
+
+    
+    <main class="flex flex-col items-center gap-12 m-6">
+        <h1 class="text-4xl font-bold">About Me</h1>
+        <!-- <div class="flex flex-wrap">
+          <div class="w-1/2">Card 1</div>
+          <div class="w-1/2">Card 2</div>
+          <div class="w-full flex justify-center">Card 3</div>
+        </div> -->
+        <div class="flex flex-col sm:flex-wrap sm:flex-row sm:justify-center space-y-8">
+  
+          <article class="sm:w-1/2 lg:w-1/3 shadow-xl rounded overflow-hidden p-4">
+              <div class="flex">
+                  <div class="w-3/5 space-y-4">
+                      <h3 class="text-2xl font-semibold">Education and Background</h3>
+                      <p class="">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro facilis temporibus provident odio necessitatibus? Vitae, cum reprehenderit. Voluptatibus asperiores eos ducimus unde tempore necessitatibus cumque, nesciunt enim reiciendis quis soluta.</p>
+                      <div><a href="educationAndBackground.html" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded cursor-pointer">go to Education and Background</a></div>
+                  </div>
+                  <img src="./images/educationAndBackground.jpeg" alt="educationAndBackground" class=" w-2/5 mb-10 mt-10">
+  
+              </div>
+          </article>
+          <article class="sm:w-1/2 lg:w-1/3 shadow-xl rounded overflow-hidden p-4">
+              <div class="flex">
+                  <div class="w-3/5 space-y-4">
+                      <h3 class="text-2xl font-semibold">My Work and Projects</h3>
+                      <p class="">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro facilis temporibus provident odio necessitatibus? Vitae, cum reprehenderit. Voluptatibus asperiores eos ducimus unde tempore necessitatibus cumque, nesciunt enim reiciendis quis soluta.</p>
+                      <div><a href="MyWorkAndProjects.html" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded cursor-pointer ">go to My Work and Projects</a></div>
+                  </div>
+                  <img src="./images/MyWorkAndProjects.jpeg" alt="MyWorkAndProjects" class="w-2/5  mb-10 mt-10">
+              </div>
+          </article>
+          <article class="sm:w-1/2 lg:w-1/3 shadow-xl rounded overflow-hidden p-4">
+              <div class="flex">
+                  <div class="w-3/5 space-y-4">
+                      <h3 class="text-2xl font-semibold">Resume/CV</h3>
+                      <p class="">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro facilis temporibus provident odio necessitatibus? Vitae, cum reprehenderit. Voluptatibus asperiores eos ducimus unde tempore necessitatibus cumque, nesciunt enim reiciendis quis soluta.</p>
+                      <div><a href="ResumeAndCV.html" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded cursor-pointer">go to Resume/CV</a></div>
+                  </div>
+                  <img src="./images/ResumeAndCV.jpeg" alt="ResumeAndCV" class="w-2/5 mb-10 mt-10">
+              </div>
+          </article>
+      </div>
     </main>
-    <footer>
-        <ul class="footerLinks">
-            <li><a href="http://www.telegram.org"><img src="./images/telegram.svg" alt="telegram"></a></li>
-            <li><a href="http://www.facebook.com"><img src="./images/facebook.svg" alt="facebook"></a></li>
-            <li><a href="http://www.linkedin.com"><img src="./images/linkedin.svg" alt="linkedin"></a></li>
-            <li><a href="http://www.twitter.com"><img src="./images/twitterx.svg" alt="twitter"></a></li>
+    <footer class="flex flex-col items-center">
+        <ul class="flex justify-center space-x-6">
+            <li class=""><a href="http://www.telegram.org"><img src="./images/telegram.svg" alt="telegram"></a></li>
+            <li class=""><a href="http://www.facebook.com"><img src="./images/facebook.svg" alt="facebook"></a></li>
+            <li class=""><a href="http://www.linkedin.com"><img src="./images/linkedin.svg" alt="linkedin"></a></li>
+            <li class=""><a href="http://www.twitter.com"><img src="./images/twitterx.svg" alt="twitter"></a></li>
         </ul>
         <p>© 2023 · All rights reserved</p>
     </footer>
-  </body>
+    <script src="index.js"></script>
+    </body>
 </html>

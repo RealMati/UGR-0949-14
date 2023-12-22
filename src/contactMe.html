@@ -4,78 +4,107 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Me</title>
-    <link rel="stylesheet" href="./contactMe.css">
+    <link rel="stylesheet" href="../dist/output.css">
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
   </head>
-  <body>
-    <header>
-        <img src="./images/logo.svg" alt="logo" >
-        <nav>
-            <ul class="navContainer">
-                <li><a href="home.html" target="_self">Home</a></li>
-                <li><a href="aboutMe.html" target="_self">About Me</a></li>
-                <li><a href="interests.html" target="_self">Interests</a></li>
-                <li><a href="contactMe.html" target="_self">Contact Me</a></li>
-            </ul>
-        </nav>
+  <body class=" bg-slate-200 space-y-4">
+    <header class="m-8 mt-2 shadow-lg">
+         
+ 
+          
+          <div class="">
+              <div class=" flex flex-col items-center sm:flex-row sm:justify-between">
+                <div class=" ">
+                  <a href="home.html" class=""><img src="./images/logo.svg" alt="logo" class="" ></a>
+              
+                </div>
+                <div class="">
+                  <ul class="flex space-x-10 sm:space-x-5">
+                    <li class="hover:bg-slate-300 sm:w-auto text-end"><a href="home.html" class="" target="_self">Home</a></li>
+                      <li class="hover:bg-slate-300 sm:w-auto  text-end"><a href="aboutMe.html" target="_self">About Me</a></li>
+                      <li class="hover:bg-slate-300 sm:w-auto text-end"><a href="interests.html" target="_self">Interests</a></li>
+                      <li class="hover:bg-slate-300  sm:w-auto text-end"><a href="contactMe.html" target="_self">Contact Me</a></li>
+                    </ul>
+                </div>
+              </div>
+          </div>
     </header>
-    <main>
-        <div id="contactList">
-            <div class="contactAddress">
-                <img src="./images/address.svg" alt="address">
-                <p>123 street</p>
-            </div>
-            <div class="contactAddress">
-                <img src="./images/phonenumber.svg" alt="phoneNumber">
-                <a href="tel:+251900000000">+251 900 000 000</a>
-            </div>
-            <div class="contactAddress">
-                <img src="./images/email.svg" alt="email">
-                <a href="mailto:matimilkessa@gmail.com">matimilkessa@gmail.com</a>
-            </div>
-            <div class="contactAddress">
-                <img src="./images/facebook.svg" alt="facebook">
-                <a href="https://www.facebook.com/username">facebook.com/username</a>
-            </div>
-            <div class="contactAddress">
-                <img src="./images/linkedin.svg" alt="linkedin">
-                <a href="https://www.linkedin.com/in/mati-milkessa/">linkedin.com/in/mati-milkessa</a>
-            </div>
-            <div class="contactAddress">
-                <img src="./images/telegram.svg" alt="telegram">
-                <a href="https://t.me/RealMati">t.me/RealMati</a>
+    <main class="flex flex-col items-center space-y-8 sm:flex-row">
+        <div class="flex flex-col items-center sm:w-1/2">
+            <div class="">
+                <div class="flex items-center space-x-6">
+                    <img src="./images/address.svg" alt="address">
+                    <p class="">123 street</p>
+                </div>
+                <div class="flex items-center space-x-6">
+                    <img src="./images/phonenumber.svg" alt="phoneNumber">
+                    <a href="tel:+251900000000">+251 900 000 000</a>
+                </div>
+                <div class="flex items-center space-x-6">
+                    <img src="./images/email.svg" alt="email">
+                    <a href="mailto:matimilkessa@gmail.com">matimilkessa@gmail.com</a>
+                </div>
+                <div class="flex items-center space-x-6">
+                    <img src="./images/facebook.svg" alt="facebook">
+                    <a href="https://www.facebook.com/username">facebook.com/username</a>
+                </div>
+                <div class="flex items-center space-x-6">
+                    <img src="./images/linkedin.svg" alt="linkedin">
+                    <a href="https://www.linkedin.com/in/mati-milkessa/">linkedin.com/in/mati-milkessa</a>
+                </div>
+                <div class="flex items-center space-x-6">
+                    <img src="./images/telegram.svg" alt="telegram">
+                    <a href="https://t.me/RealMati">t.me/RealMati</a>
+                </div>
             </div>
         </div>
-        <div id="contactMeForm">
-            <form action="/action_page.php">
-                <div class="contactBox">
-                    <label for="fname">First name:</label><br>
-                    <input type="text" id="fname" name="fname"><br>
-                </div>
-                <div class="contactBox">
-                    <label for="lname">Last name:</label><br>
-                    <input type="text" id="lname" name="lname"><br>
+        <div class="shadow-2xl p-4 sm:w-1/2 sm:mr-6 rounded-xl">
+            <form id="form">
+                <div class="flex justify-between">
+                    <div class="w-1/2">
+                        <label for="fname" class="block">First name:</label><br>
+                        <input class="border w-11/12" type="text" id="fname" name="fname"><br>
+                        <div id="fname-Err" class="hidden bg-red-500 w-11/12">First Name can not be empty</div>
+
+                    </div>
+                    <div class="w-1/2">
+                        <label for="lname" class="block">Last name:</label><br>
+                        <input class="border w-11/12 " type="text" id="lname" name="lname"><br>
+                        <div id="lname-Err" class="hidden bg-red-500 w-11/12">Last Name can not be empty</div>
+                    </div>
                 </div>
                 
-                <div class="contactBox">
-                    <label for="email">Email:</label><br>
-                    <input type="email" id="email" name="email"><br>
+                <div class="">
+                    <label for="email" class="block">Email:</label><br>
+                    <input class="border w-1/2" type="email" id="email" name="email"><br>
+                    <div id="email-Err" class="hidden bg-red-500 w-fit">The input Email is not valid</div> 
                 </div>
-                <div class="contactBox">
-                    <label for="message">Message:</label><br>
-                    <input type="text" id="message" name="message"><br>
+                <div class="">
+                    <label for="message" class="block">Message:</label><br>
+                    <textarea class="border w-full" id="message" cols="2" rows="4"></textarea>
+                    <div id="message-Err" class="hidden bg-red-500 w-fit ">Message field can not be empty</div>
                 </div>
-                <input id="submitButton" type="submit" value="Send Message" >
+                <input id="submitButton" type="submit" value="Send Message" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded cursor-pointer" >
               </form>
-            </div>
+        </div>
+        <div class="flex flex-col items-center bg-lime-500 rounded-md space-y-2 fixed inset-0  justify-center z-50 w-fit hidden h-fit mx-auto" id="modal">
+            <img src="images/confirmation.svg">
+            <h2>Thank You!</h2>
+            <p>You have successfully sent your message. Thanks!</p>
+            <p><strong>This pop-up will close automatically after 3 seconds</strong></p>
+        </div>
+
+
     </main>
-    <footer>
-        <ul class="footerLinks">
-            <li><a href="http://www.telegram.org"><img src="./images/telegram.svg" alt="telegram"></a></li>
-            <li><a href="http://www.facebook.com"><img src="./images/facebook.svg" alt="facebook"></a></li>
-            <li><a href="http://www.linkedin.com"><img src="./images/linkedin.svg" alt="linkedin"></a></li>
-            <li><a href="http://www.twitter.com"><img src="./images/twitterx.svg" alt="twitter"></a></li>
-        </ul>
-        <p>© 2023 · All rights reserved</p>
-    </footer>
-  </body>
+    <footer class="flex flex-col items-center">
+      <ul class="flex justify-center space-x-6">
+          <li class=""><a href="http://www.telegram.org"><img src="./images/telegram.svg" alt="telegram"></a></li>
+          <li class=""><a href="http://www.facebook.com"><img src="./images/facebook.svg" alt="facebook"></a></li>
+          <li class=""><a href="http://www.linkedin.com"><img src="./images/linkedin.svg" alt="linkedin"></a></li>
+          <li class=""><a href="http://www.twitter.com"><img src="./images/twitterx.svg" alt="twitter"></a></li>
+      </ul>
+      <p>© 2023 · All rights reserved</p>
+  </footer>
+    <script src="formsubmit.js"></script>
+    </body>
 </html>
