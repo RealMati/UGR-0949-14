@@ -4,56 +4,110 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Me</title>
-    <link rel="stylesheet" href="./aboutMe.css">
+
+    <link rel="stylesheet" href="css/main.css">
   </head>
-  <body>
-    <header>
-        <img src="./images/logo.svg" alt="logo" >
-        <nav>
-            <ul class="navContainer">
-                <li><a href="home.html" target="_self">Home</a></li>
-                <li><a href="aboutMe.html" target="_self">About Me</a></li>
-                <li><a href="interests.html" target="_self">Interests</a></li>
-                <li><a href="contactMe.html" target="_self">Contact Me</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <h1>About Me</h1>
-        <article class="articleContent">
-            <img src="./images/educationAndBackground.jpeg" alt="educationAndBackground">
-            <div class="textContent">
-                <h3>Education and Background</h3>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro facilis temporibus provident odio necessitatibus? Vitae, cum reprehenderit. Voluptatibus asperiores eos ducimus unde tempore necessitatibus cumque, nesciunt enim reiciendis quis soluta.</p>
-                <a href="educationAndBackground.html">go to Education and Background</a>
-            </div>
-        </article>
-        <article class="articleContent">
-            <img src="./images/MyWorkAndProjects.jpeg" alt="MyWorkAndProjects">
-            <div class="textContent">
-                <h3>My Work and Projects</h3>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro facilis temporibus provident odio necessitatibus? Vitae, cum reprehenderit. Voluptatibus asperiores eos ducimus unde tempore necessitatibus cumque, nesciunt enim reiciendis quis soluta.</p>
-                <a href="MyWorkAndProjects.html">go to My Work and Projects</a>
-            </div>
-            
-        </article>
-        <article class="articleContent">
-            <img src="./images/ResumeAndCV.jpeg" alt="ResumeAndCV">
-            <div class="textContent">
-                <h3>Resume/CV</h3>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro facilis temporibus provident odio necessitatibus? Vitae, cum reprehenderit. Voluptatibus asperiores eos ducimus unde tempore necessitatibus cumque, nesciunt enim reiciendis quis soluta.</p>
-                <a href="ResumeAndCV.html">go to Resume/CV</a>
-            </div>
-        </article>
+  <body class="">
+    <header class="shadow">
+          
+      <nav class="d-sm-none">
+          <div class="container-fluid">
+  
+                
+              <div class="container d-flex flex-wrap justify-content-center">
+                  <div class=""><a href="home.html" class=""><img src="./images/logo.svg" alt="logo" class="" ></a></div>
+                
+              </div>
+              <div class="" id="menu-list">
+                  
+                  <ul class="list-unstyled container d-flex flex-wrap justify-content-center" >
+                    <li class="nav-item hoverable col"><a href="home.html" class="nav-link text-center target="_self">Home</a></li>
+                    <li class="nav-item hoverable col"><a href="aboutMe.html"  class="nav-link text-center" target="_self">About Me</a></li>
+                    <li class="nav-item hoverable col"><a href="interests.html"  class="nav-link text-center" target="_self">Interests</a></li>
+                    <li class="nav-item hoverable col"><a href="contactMe.html"  class="nav-link text-center" target="_self">Contact Me</a></li>
+                  </ul>
+              </div>
+              
+        </div>
+      </nav>
+      <nav class="navbar d-none d-sm-block navbar-expand-sm navbar-light bg-light">
+          
+          <div class="container-fluid overflow-hidden">
+  
+                
+                <a href="home.html" class="navbar-brand"><img src="./images/logo.svg" alt="logo" class="" ></a>
+                <div class="collapse navbar-collapse justify-content-end align-center" id="menu-list">
+                  
+                    <ul class="navbar-nav" >
+                      <li class="nav-item hoverable"><a href="home.html" class="nav-link text-end" target="_self">Home</a></li>
+                      <li class="nav-item hoverable"><a href="aboutMe.html"  class="nav-link text-end" target="_self">About Me</a></li>
+                      <li class="nav-item hoverable"><a href="interests.html"  class="nav-link text-end" target="_self">Interests</a></li>
+                      <li class="nav-item hoverable"><a href="contactMe.html"  class="nav-link text-end" target="_self">Contact Me</a></li>
+                    </ul>
+                </div>
+                
+          </div>
+      </nav>
+
+        
+      
+  </header>
+
+    
+    <main class="m-3">
+        <h1 class="text-center">About Me</h1>
+        
+        <div class="container-fluid ">
+          <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 justify-content-center g-2">
+            <article class="card col  mb-3 py-2  shadow">
+                <div class="container">
+                    <div class="row">
+                      <div class="col-8">
+                          <h3 class="">Education and Background</h3>
+                          <p class="">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro facilis temporibus provident odio necessitatibus? Vitae, cum reprehenderit. Voluptatibus asperiores eos ducimus unde tempore necessitatibus cumque, nesciunt enim reiciendis quis soluta.</p>
+                          <div><a href="educationAndBackground.html" class="btn btn-primary">go to Education and Background</a></div>
+                      </div>
+                      <img src="./images/educationAndBackground.jpeg" alt="educationAndBackground" class="col my-5">
+                    </div>
+                </div>
+            </article>
+            <article class="card col py-2 mb-3 shadow">
+                <div class="container">
+                    <div class="row">
+                      <div class="col-8">
+                          <h3 class="">My Work and Projects</h3>
+                          <p class="">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro facilis temporibus provident odio necessitatibus? Vitae, cum reprehenderit. Voluptatibus asperiores eos ducimus unde tempore necessitatibus cumque, nesciunt enim reiciendis quis soluta.</p>
+                          <div><a href="MyWorkAndProjects.html" class="btn btn-primary ">go to My Work and Projects</a></div>
+                      </div>
+                      <img src="./images/MyWorkAndProjects.jpeg" alt="MyWorkAndProjects" class="col my-5">
+                    </div>
+                </div>
+            </article>
+            <article class="card col py-2 shadow mb-3">
+                <div class="container">
+                    <div class="row">
+                      <div class="col-8">
+                          <h3 class="">Resume/CV</h3>
+                          <p class="">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro facilis temporibus provident odio necessitatibus? Vitae, cum reprehenderit. Voluptatibus asperiores eos ducimus unde tempore necessitatibus cumque, nesciunt enim reiciendis quis soluta.</p>
+                          <div><a href="ResumeAndCV.html" class="btn btn-primary">go to Resume/CV</a></div>
+                      </div>
+                      <img src="./images/ResumeAndCV.jpeg" alt="ResumeAndCV" class="col my-5">
+                    </div>
+                </div>
+            </article>
+                </div>
+        </div>
     </main>
-    <footer>
-        <ul class="footerLinks">
-            <li><a href="http://www.telegram.org"><img src="./images/telegram.svg" alt="telegram"></a></li>
-            <li><a href="http://www.facebook.com"><img src="./images/facebook.svg" alt="facebook"></a></li>
-            <li><a href="http://www.linkedin.com"><img src="./images/linkedin.svg" alt="linkedin"></a></li>
-            <li><a href="http://www.twitter.com"><img src="./images/twitterx.svg" alt="twitter"></a></li>
-        </ul>
-        <p>© 2023 · All rights reserved</p>
+    <footer class=" container">
+      <ul class="row list-unstyled justify-content-center">
+        <li class="col-2 col-lg-1 "><a href="http://www.telegram.org"><img src="./images/telegram.svg" alt="telegram"></a></li>
+        <li class="col-2 col-lg-1"><a href="http://www.facebook.com"><img src="./images/facebook.svg" alt="facebook"></a></li>
+        <li class="col-2 col-lg-1"><a href="http://www.linkedin.com"><img src="./images/linkedin.svg" alt="linkedin"></a></li>
+        <li class="col-2 col-lg-1"><a href="http://www.twitter.com"><img src="./images/twitterx.svg" alt="twitter"></a></li>
+    </ul>
+        <p class="text-center">© 2023 · All rights reserved</p>
     </footer>
-  </body>
+    <script src="js/index.js"></script>
+    <script src="js/hover.js"></script>
+    </body>
 </html>

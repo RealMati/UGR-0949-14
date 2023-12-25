@@ -4,88 +4,108 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resume and CV</title>
-    <link rel="stylesheet" href="./ResumeAndCV.css">
+    <link rel="stylesheet" href="css/main.css">
+
 
   </head>
-  <body>
-    <header>
-      <img src="./images/logo.svg" alt="logo" >
-      <nav>
-        <div class="dropdown">
-          <img src="./images/menu.svg" alt="menu">  
-          <ul class="navContainer">
-              <li><a href="home.html" target="_self">Home</a></li>
-              <li><a href="aboutMe.html" target="_self">About Me</a></li>
-              <li><a href="interests.html" target="_self">Interests</a></li>
-              <li><a href="contactMe.html" target="_self">Contact Me</a></li>
-          </ul>
-        </div>
+  <body class=" ">
+    <header class=" shadow">
+         
+      <nav class="navbar navbar-expand-sm navbar-light bg-light">
+          
+          <div class="container-fluid">
+  
+                
+                <a href="home.html" class="navbar-brand"><img src="./images/logo.svg" alt="logo" class="" ></a>
+                <button class="navbar-toggler" type="button" id="menu" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end align-center" id="menu-list">
+                  
+                    <ul class="navbar-nav" >
+                      <li class="nav-item hoverable"><a href="home.html" class="nav-link text-end" target="_self">Home</a></li>
+                      <li class="nav-item hoverable"><a href="aboutMe.html"  class="nav-link text-end" target="_self">About Me</a></li>
+                      <li class="nav-item hoverable"><a href="interests.html"  class="nav-link text-end" target="_self">Interests</a></li>
+                      <li class="nav-item hoverable"><a href="contactMe.html"  class="nav-link text-end" target="_self">Contact Me</a></li>
+                    </ul>
+                </div>
+                
+          </div>
       </nav>
-    </header>
-    <main>
-      <div class="topContent">
-        <img src="./images/person.jpg" alt="person">
-        <article>
-          <h1>First Name</h1>
-          <h2>Last Name</h2>
-          <h3>Student at Addis Ababa University</h3>
-        </article>
+  </header>
+    <main class="">
+      <div class="row flex-row justify-content-end">
+
+          <div class="col-12 col-lg-8 row flex-row order-lg-2">
+            <article class="col">
+              <h1 class="">First Name</h1>
+              <h2 class="">Last Name</h2>
+              <h3 class="">Student at Addis Ababa University</h3>
+            </article>
+            <img src="./images/person.jpg" alt="person" class=" col">
+          </div>
+
+          <div class="col-12 col-lg-4  order-lg-3">
+            <article class="lg:w-2/3  float-end">
+              <h3 class="text-2xl font-semibold">Personal Note</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus quos eaque nam quod aspernatur iste iusto? Maiores aperiam molestias fugit quae aliquid error labore! Maxime sequi accusantium eum laudantium animi!</p>
+            </article>
+          </div>
+          <div class="col-6  col-lg-4 order-lg-2">
+            <article  class=""> 
+              <h3 class="text-2xl font-semibold">personal details</h3>
+              <ul>
+                <li>Lorem ipsum dolor sit amet.</li>
+                <li>Lorem ipsum dolor sit amet.</li>
+                <li>Lorem ipsum dolor sit amet.</li>
+                <li>Lorem ipsum dolor sit amet.</li>
+              </ul>
+            </article>
+            <article  class="">
+              <h3 class="text-2xl font-semibold">Experiece</h3>
+              <ul>
+                <li>Lorem ipsum, dolor sit amet consectetur adipisicing.</li>
+                <li>Lorem ipsum, dolor sit amet consectetur adipisicing.</li>
+                <li>Lorem ipsum, dolor sit amet consectetur adipisicing.</li>
+              </ul>
+            </article>
+          </div>
+
+        <div class="col-6 order-lg-1  col-lg-4 mt-lg-5">
+          <article class="">
+            <h3 class="text-2xl font-semibold">Skills</h3>
+            <ul>
+              <li>Lorem ipsum dolor sit amet.</li>
+              <li>Lorem ipsum dolor sit amet.</li>
+              <li>Lorem ipsum dolor sit amet.</li>
+              <li>Lorem ipsum dolor sit amet.</li>
+            </ul>
+          </article>
+          <article class="">
+            <h3 class="text-2xl font-semibold">Contact Me</h3>
+            <ul>
+              <li>Lorem ipsum dolor sit.</li>
+              <li>Lorem ipsum dolor sit.</li>
+              <li>Lorem ipsum dolor sit.</li>
+              <li>Lorem ipsum dolor sit.</li>
+            </ul>
+          </article>
+        </div>
       </div>
-      <div class="section"> 
-        <article class="personalNote">
-          <h3>Personal Note</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus quos eaque nam quod aspernatur iste iusto? Maiores aperiam molestias fugit quae aliquid error labore! Maxime sequi accusantium eum laudantium animi!</p>
-        </article>
-      </div>
-      <div class="mainListContents">
-        <article>
-          <h3>personal details</h3>
-          <ul>
-            <li>Lorem ipsum dolor sit amet.</li>
-            <li>Lorem ipsum dolor sit amet.</li>
-            <li>Lorem ipsum dolor sit amet.</li>
-            <li>Lorem ipsum dolor sit amet.</li>
-          </ul>
-        </article>
-        <article>
-          <h3>Experiece</h3>
-          <ul>
-            <li>Lorem ipsum, dolor sit amet consectetur adipisicing.</li>
-            <li>Lorem ipsum, dolor sit amet consectetur adipisicing.</li>
-            <li>Lorem ipsum, dolor sit amet consectetur adipisicing.</li>
-          </ul>
-        </article>
-      </div>
-      <div class="sidebarContent">
-        <article>
-          <h3>Skills</h3>
-          <ul>
-            <li>Lorem ipsum dolor sit amet.</li>
-            <li>Lorem ipsum dolor sit amet.</li>
-            <li>Lorem ipsum dolor sit amet.</li>
-            <li>Lorem ipsum dolor sit amet.</li>
-          </ul>
-        </article>
-        <article>
-          <h3>Contact Me</h3>
-          <ul>
-            <li>Lorem ipsum dolor sit.</li>
-            <li>Lorem ipsum dolor sit.</li>
-            <li>Lorem ipsum dolor sit.</li>
-            <li>Lorem ipsum dolor sit.</li>
-          </ul>
-        </article>
-      </div>
-      <a id="download-link" href="./ResumeAndCV.html" download="Resume/CV.html" target="_blank">Download Resume/CV</a>
+      <div class="text-center "><a id="download-link" href="./ResumeAndCV.html" download="Resume/CV.html" target="_blank" class="btn btn-primary">Download Resume/CV</a></div>
     </main>
-    <footer>
-      <ul class="footerLinks">
-          <li><a href="http://www.telegram.org"><img src="./images/telegram.svg" alt="telegram"></a></li>
-          <li><a href="http://www.facebook.com"><img src="./images/facebook.svg" alt="facebook"></a></li>
-          <li><a href="http://www.linkedin.com"><img src="./images/linkedin.svg" alt="linkedin"></a></li>
-          <li><a href="http://www.twitter.com"><img src="./images/twitterx.svg" alt="twitter"></a></li>
-      </ul>
-      <p>© 2023 · All rights reserved</p>
+    <footer class="  ">
+      <ul class="row list-unstyled justify-content-center">
+        <li class="col-2 col-lg-1 "><a href="http://www.telegram.org"><img src="./images/telegram.svg" alt="telegram"></a></li>
+        <li class="col-2 col-lg-1"><a href="http://www.facebook.com"><img src="./images/facebook.svg" alt="facebook"></a></li>
+        <li class="col-2 col-lg-1"><a href="http://www.linkedin.com"><img src="./images/linkedin.svg" alt="linkedin"></a></li>
+        <li class="col-2 col-lg-1"><a href="http://www.twitter.com"><img src="./images/twitterx.svg" alt="twitter"></a></li>
+    </ul>
+      <p class="text-center">© 2023 · All rights reserved</p>
   </footer>
+  <script src="js/index.js"></script>
+
+  <script src="js/hover.js"></script>
+
   </body>
 </html>

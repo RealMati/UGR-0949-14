@@ -4,37 +4,83 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Interests</title>
-    <link rel="stylesheet" href="./interests.css">
+    <link rel="stylesheet" href="css/main.css">
+
   </head>
-  <body>
-    <header>
-      <img src="./images/logo.svg" alt="logo" >
-      <nav class="navContainer">
-        <ul class="navContainer">
-          <li><a href="home.html" target="_self">Home</a></li>
-          <li><a href="aboutMe.html" target="_self">About Me</a></li>
-          <li><a href="interests.html" target="_self">Interests</a></li>
-          <li><a href="contactMe.html" target="_self">Contact Me</a></li>
-      </ul>
+  <body class="container-lg row">
+    <header class="col-lg-3 col-12 shadow">
+      <nav class="d-none d-lg-block">
+        <div class="d-flex justify-content-center"><a href="home.html" class="navbar-brand"><img src="./images/logo.svg" alt="logo" class="" ></a></div>
+        
+        <div class="justify-content-end align-center my-5" id="menu-list">
+          
+            <ul class="list-unstyled row-lg" >
+              <li class="col-12 hoverable my-2"><a href="home.html" class="nav-link text-center" target="_self">Home</a></li>
+              <li class="col-12 hoverable my-2"><a href="aboutMe.html"  class="nav-link text-center" target="_self">About Me</a></li>
+              <li class="col-12 hoverable my-2"><a href="interests.html"  class="nav-link text-center" target="_self">Interests</a></li>
+              <li class="col-12 hoverable my-2"><a href="contactMe.html"  class="nav-link text-center" target="_self">Contact Me</a></li>
+            </ul>
+      </nav>  
+      <nav class="d-sm-none">
+          <div class="container-fluid">
+  
+                
+              <div class="container d-flex flex-wrap justify-content-center">
+                  <div class=""><a href="home.html" class=""><img src="./images/logo.svg" alt="logo" class="" ></a></div>
+                
+              </div>
+              <div class="" id="menu-list">
+                  
+                  <ul class="list-unstyled container d-flex flex-wrap justify-content-center" >
+                    <li class="nav-item hoverable col"><a href="home.html" class="nav-link text-center target="_self">Home</a></li>
+                    <li class="nav-item hoverable col"><a href="aboutMe.html"  class="nav-link text-center" target="_self">About Me</a></li>
+                    <li class="nav-item hoverable col"><a href="interests.html"  class="nav-link text-center" target="_self">Interests</a></li>
+                    <li class="nav-item hoverable col"><a href="contactMe.html"  class="nav-link text-center" target="_self">Contact Me</a></li>
+                  </ul>
+              </div>
+              
+        </div>
       </nav>
-    </header>
-    <main>
-      <div class="contetLayout">
-        <img src="./images/image.svg" alt="image1">
-        <article class="articleContent">
-          <h2>Favorite Movies</h2>
-          <ul>
+      <nav class="navbar d-none d-sm-block d-lg-none navbar-expand-sm navbar-light bg-light">
+          
+          <div class="container-fluid overflow-hidden">
+  
+                
+                <a href="home.html" class="navbar-brand"><img src="./images/logo.svg" alt="logo" class="" ></a>
+                <div class="collapse navbar-collapse justify-content-end align-center" id="menu-list">
+                  
+                    <ul class="navbar-nav" >
+                      <li class="nav-item hoverable"><a href="home.html" class="nav-link text-end" target="_self">Home</a></li>
+                      <li class="nav-item hoverable"><a href="aboutMe.html"  class="nav-link text-end" target="_self">About Me</a></li>
+                      <li class="nav-item hoverable"><a href="interests.html"  class="nav-link text-end" target="_self">Interests</a></li>
+                      <li class="nav-item hoverable"><a href="contactMe.html"  class="nav-link text-end" target="_self">Contact Me</a></li>
+                    </ul>
+                </div>
+                
+          </div>
+      </nav>
+
+        
+      
+  </header>
+    <main class="col-12  col-lg-9">
+      <div class="row flex-sm-row-reverse flex-row align-items-center">
+        <article class="col-sm-7 col">
+          <h2 class=" text-2xl font-semibold">Favorite Movies</h2>
+          <ul class="">
             <li>The Shawshank Redemption</li>
             <li>Inception</li>
             <li>The Godfather</li>
             <li>The Dark Knight</li>
           </ul>
         </article>
+        <img src="./images/image.svg" alt="image1" class="col-sm-4 col">
+
       </div>
-      <div class="contetLayout">
-        <img src="./images/image.svg" alt="image2">
-        <article class="articleContent">
-          <h2>Favorite Books</h2>
+      
+      <div class="row flex-sm-row-reverse flex-row align-items-center">
+        <article class="col-sm-7 col">
+          <h2 class="  ">Favorite Books</h2>
           <ul>
             <li>"To Kill a Mockingbird" by Harper Lee</li>
             <li>"1984" by George Orwell.</li>
@@ -42,11 +88,13 @@
             <li>"The Lord of the Rings" by J.R.R. Tolkien</li>
           </ul>
         </article>
+
+        <img src="./images/image.svg" alt="image2" class=" col-sm-4 col ">
+
       </div>
-      <div class="contetLayout">
-        <img src="./images/image.svg" alt="image3">
-        <article class="articleContent">
-          <h2>Leisure Time Activities</h2>
+      <div class="row  flex-sm-row-reverse flex-row align-items-center">
+        <article class="col-sm-7 col">
+          <h2 class="">Leisure Time Activities</h2>
           <ul>
             <li>Reading and exploring new books and genres.</li>
             <li>Watching movies and binge-watching TV series.</li>
@@ -54,16 +102,22 @@
             <li>Trying out new recipes and cooking or baking.</li>
           </ul>
         </article>
+        <img src="./images/image.svg" alt="image3" class=" col-sm-4  col">
+
       </div>
     </main>
-    <footer>
-      <ul class="footerLinks">
-          <li><a href="http://www.telegram.org"><img src="./images/telegram.svg" alt="telegram"></a></li>
-          <li><a href="http://www.facebook.com"><img src="./images/facebook.svg" alt="facebook"></a></li>
-          <li><a href="http://www.linkedin.com"><img src="./images/linkedin.svg" alt="linkedin"></a></li>
-          <li><a href="http://www.twitter.com"><img src="./images/twitterx.svg" alt="twitter"></a></li>
-      </ul>
-      <p>© 2023 · All rights reserved</p>
+    <footer class="col-lg-4 mt-3 col-12">
+      <ul class="list-unstyled container d-flex flex-wrap justify-content-center">
+        <li class="col-2 col-lg-3"><a href="http://www.telegram.org"><img src="./images/telegram.svg" alt="telegram"></a></li>
+        <li class="col-2 col-lg-3"><a href="http://www.facebook.com"><img src="./images/facebook.svg" alt="facebook"></a></li>
+        <li class="col-2 col-lg-3"><a href="http://www.linkedin.com"><img src="./images/linkedin.svg" alt="linkedin"></a></li>
+        <li class="col-2 col-lg-3"><a href="http://www.twitter.com"><img src="./images/twitterx.svg" alt="twitter"></a></li>
+    </ul>
+      <p class="text-center">© 2023 · All rights reserved</p>
   </footer>
+  <script src="js/index.js"></script>
+
+  <script src="js/hover.js"></script>
+
   </body>
 </html>

@@ -3,50 +3,78 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Education and Background</title>
-    <link rel="stylesheet" href="./educationAndBackground.css">
+    <title>ation and Background</title>
+    <link rel="stylesheet" href="css/main.css">
+
   </head>
-  <body>
-    <header>
-        <img src="./images/logo.svg" alt="logo" >
-        <nav>
-          <div class="dropdown">
-            <img src="./images/menu.svg" alt="menu">  
-            <ul class="navContainer">
-                <li><a href="home.html" target="_self">Home</a></li>
-                <li><a href="aboutMe.html" target="_self">About Me</a></li>
-                <li><a href="interests.html" target="_self">Interests</a></li>
-                <li><a href="contactMe.html" target="_self">Contact Me</a></li>
+  <body class="container-lg row">
+    <header class="col-lg-3 col-12 shadow">
+         
+      <nav class="d-none d-lg-block">
+        <div class="d-flex justify-content-center"><a href="home.html" class="navbar-brand"><img src="./images/logo.svg" alt="logo" class="" ></a></div>
+        
+        <div class="justify-content-end align-center my-5" >
+          
+            <ul class="list-unstyled row-lg" >
+              <li class="col-12 hoverable my-2"><a href="home.html" class="nav-link text-center" target="_self">Home</a></li>
+              <li class="col-12 hoverable my-2"><a href="aboutMe.html"  class="nav-link text-center" target="_self">About Me</a></li>
+              <li class="col-12 hoverable my-2"><a href="interests.html"  class="nav-link text-center" target="_self">Interests</a></li>
+              <li class="col-12 hoverable my-2"><a href="contactMe.html"  class="nav-link text-center" target="_self">Contact Me</a></li>
             </ul>
+      </nav>
+      <nav class="navbar navbar-expand-sm navbar-light bg-light d-lg-none">
+          
+        <div class="container-fluid">
+
+              
+          <a href="home.html" class="navbar-brand"><img src="./images/logo.svg" alt="logo" class="" ></a>
+          <button class="navbar-toggler" type="button" id="menu" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end align-center" id="menu-list">
+            
+              <ul class="navbar-nav" >
+                <li class="nav-item hoverable"><a href="home.html" class="nav-link text-end" target="_self">Home</a></li>
+                <li class="nav-item hoverable"><a href="aboutMe.html"  class="nav-link text-end" target="_self">About Me</a></li>
+                <li class="nav-item hoverable"><a href="interests.html"  class="nav-link text-end" target="_self">Interests</a></li>
+                <li class="nav-item hoverable"><a href="contactMe.html"  class="nav-link text-end" target="_self">Contact Me</a></li>
+              </ul>
           </div>
-        </nav>
-    </header>
-    <main>
-        <div class="section">
-            <article class="articleContent">
-              <h2>Background</h2>
+          
+        </div>
+      </nav>
+      
+  </header>
+    <main class=" col-12  col-lg-9">
+        <div class=" ">
+            <article class="">
+              <h2 class="">Background</h2>
               <p>Lorem ipsum dolor sit   amet consectetur adipisicing elit. Suscipit minima ea in architecto harum velit quisquam cumque tempora non molestias sapiente repellat temporibus enim obcaecati veritatis et magnam, iusto dolorem laborum eveniet. Cupiditate doloremque officia quas accusantium asperiores, dolorum similique? Corrupti aut impedit corporis, doloremque provident tempore quisquam accusamus nesciunt?</p>
             </article>
           </div>
-          <div class="section">
-          <article class="articleContent">
-            <h2>Education</h2>
-            <ul>
-              <li><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur illum perspiciatis saepe. Praesentium, tempora quaerat!</p></li>
-              <li><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur illum perspiciatis saepe. Praesentium, tempora quaerat!</p></li>
-              <li><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur illum perspiciatis saepe. Praesentium, tempora quaerat!</p></li>
-            </ul>
-          </article>
-        </div>
+          <div class=" ">
+            <article class="">
+              <h2 class="">Education</h2>
+              <ul>
+                <li><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur illum perspiciatis saepe. Praesentium, tempora quaerat!</p></li>
+                <li><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur illum perspiciatis saepe. Praesentium, tempora quaerat!</p></li>
+                <li><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur illum perspiciatis saepe. Praesentium, tempora quaerat!</p></li>
+              </ul>
+            </article>
+          </div>
     </main>
-    <footer>
-      <ul class="footerLinks">
-          <li><a href="http://www.telegram.org"><img src="./images/telegram.svg" alt="telegram"></a></li>
-          <li><a href="http://www.facebook.com"><img src="./images/facebook.svg" alt="facebook"></a></li>
-          <li><a href="http://www.linkedin.com"><img src="./images/linkedin.svg" alt="linkedin"></a></li>
-          <li><a href="http://www.twitter.com"><img src="./images/twitterx.svg" alt="twitter"></a></li>
+    <footer class="col-lg-4  col-12 ">
+      <ul class="list-unstyled container d-flex flex-wrap justify-content-center">
+          <li class="col-2 col-lg-3"><a href="http://www.telegram.org"><img src="./images/telegram.svg" alt="telegram"></a></li>
+          <li class="col-2 col-lg-3"><a href="http://www.facebook.com"><img src="./images/facebook.svg" alt="facebook"></a></li>
+          <li class="col-2 col-lg-3"><a href="http://www.linkedin.com"><img src="./images/linkedin.svg" alt="linkedin"></a></li>
+          <li class="col-2 col-lg-3"><a href="http://www.twitter.com"><img src="./images/twitterx.svg" alt="twitter"></a></li>
       </ul>
-      <p>© 2023 · All rights reserved</p>
+      <p class="text-center">© 2023 · All rights reserved</p>
   </footer>
+  <script src="js/index.js"></script>
+
+  <script src="js/hover.js"></script>
+
   </body>
 </html>
